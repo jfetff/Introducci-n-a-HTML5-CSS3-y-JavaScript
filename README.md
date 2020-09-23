@@ -2,7 +2,7 @@
 
 ### MODULO 1 
 
-### Lección 1 OverVer HTML
+### Lección 1 Introducción HTML
 
 #### Demonstración: Creating a Simple Contact Form 
 
@@ -21,7 +21,7 @@
 
 1. Crear un archivo HTML con la siguiente estructura:
    ```html
-       <!DOCTipo HTML>
+       <!DOCTYPE HTML>
         <html lang="en">
             <head>
               <meta charset="UTF-8" />
@@ -79,7 +79,7 @@
             Your Details y Enquiry
         </legend>
     </fieldset>
-    <input Tipo="submit" value="Send" />
+    <input type="submit" value="Send" />
    ```
 3.	Agregar un elemento **&lt;/legend&gt;**, agregar una lista no ordeneda con; nombre de usuario, telefono, email y un mensaje:
    ```html
@@ -87,21 +87,21 @@
         <li>
           <label>
             <strong>name</strong><br />
-            <input Tipo="texto" 
+            <input type="texto" 
                    name="Username" />
           </label>
         </li>
         <li>
           <label>
             Telephone<br />
-            <input Tipo="texto" 
+            <input type="texto" 
                    name="Phone" />
           </label>
         </li>
         <li>
           <label>
             Email dirección<br />
-            <input Tipo="texto" 
+            <input type="texto" 
                    name="Email" />
           </label>
         </li>
@@ -121,14 +121,14 @@
 ### Ver la página
 
 1.	Abrir el explorador de archivos.
-2.	Navegar hasta el proyecto **..\Mod01\Democódigo**.
+2.	Navegar hasta el proyecto **..\Mod01\DemoCode**.
 3.	Hacer doble Clic en **ContactUs.html**.
 
 ![alt texto](./Mod-1/DemoWebSite/Images/20480B_1_ContactUs.png "About página")
 
-### Lesson 3: Crear un Aplicación Web Usyo Visual Studio 2019
+### Lesson 3: Crear un Aplicación Web Usando Visual Studio 2019
 
-### Demonstración: Crear un Website Usyo Visual Studio 2019
+### Demonstración: Crear un Website Usando Visual Studio 2019
 
 #### Preparación 
 
@@ -143,14 +143,14 @@
 
 >**Note**: NO importa a esta etapa usar **Visual Basic** o **Visual C#**.
 4. En **name** >> **DemoWebSite**.
-5.	De la lista despegable >> **Mod01\Democódigo\DemoWebSite** >>  **OK**.
+5.	De la lista despegable >> **Mod01\DemoCode\DemoWebSite** >>  **OK**.
 6. En **New ASP.NET Web Application-DemoWebSite** >> **Empty** >> **OK**.
 
 ### Agregar y editar archivos en el proyecto
 
 1.	En **DemoWebSite - Microsoft Visual Studio** >> **Solution Explorer**.
 2.	En el explorador de Solución Explorer, clic derecho **DemoWebSite** >> **Agregar** >> **Existing Item**.
-3.	En **Agregar Existing Item - DemoWebSite** >> **\Mod01\Democódigo** >> **ContactUs.html** >> **Agregar**.
+3.	En **Agregar Existing Item - DemoWebSite** >> **\Mod01\DemoCode** >> **ContactUs.html** >> **Agregar**.
 4.	En el explorado de Solución, clic derecho **ContactUs.html**, y entonces clic **Set As Start página**.
 5.	En el explorado de Solución,  clic derecho en **DemoWebSite** Proyecto, apuntar a **Agregar**, clic **New Folder**, y entonces nombrelo **Estilos**.
 6.	clic derecho en **Estilos** >> **Agregar** >> **New Item**.
@@ -171,7 +171,7 @@
         <head>
             <meta charset="UTF-8" />
             <title>Contact Us</title>
-            <link href="Estilos/ContactUsEstilos.css" rel="Estilosheet" Tipo="texto/css" />
+            <link href="Estilos/ContactUsEstilos.css" rel="Estilosheet" type="texto/css" />
         </head>
    ```
 
@@ -199,11 +199,11 @@ Asegurese que que ha clonado el directorio de GitHub (**https://github.com/Micro
 
 1.	Abrir Microsoft Visual Studio 2019.
 2.	En el Visual Studio, en el menu **archivo** >> **Abrir** >> **Proyecto/Solution**.
-3.	En el **Abrir Proyecto** caja de dialogo, browse a la **[Repository Root]\AllFiles\Mod02\Democódigo\Starter** folder, clic **DemoWebSite.sln**, y entonces clic **Abrir**.
+3.	En el **Abrir Proyecto** caja de dialogo, browse a la **[Repository Root]\AllFiles\Mod02\DemoCode\Starter** folder, clic **DemoWebSite.sln**, y entonces clic **Abrir**.
 4.	En el explorador de soluciones, expy **DemoWebSite** Proyecto, y entonces doble-clic **ContactUs.html**.
 5.	En el archivo **ContactUs.html**, encierre los contenidos de los **&lt;body&gt;** elementos en un **&lt;article&gt;** elemento como se muestra En el siguiente ejemplo de código:
     ```html
-        <!DOCTipo HTML>
+        <!DOCTYPE HTML>
         <html lang="en">  
           ...
           </head>
@@ -325,7 +325,7 @@ Asegurese que que ha clonado el 20480C directorio de GitHub (**https://github.co
 
 1.	Abrir Visual Studio.
 2.	En el Visual Studio, en el **archivo** menu, **Abrir**, y entonces clic **Proyecto/Solution**.
-3.	En la **Abrir Proyecto** caja de dialogo, >> **Mod02\Democódigo\Starter** >> **DemoWebSite.sln** >> **Abrir**.
+3.	En la **Abrir Proyecto** caja de dialogo, >> **Mod02\DemoCode\Starter** >> **DemoWebSite.sln** >> **Abrir**.
 
 >**Nota**: Si aparece la caja de dialogo **Inconsistent Line Endings**, limpiar el checkbox **Always show this dialog** y entonces clic **Yes**.
 
@@ -389,7 +389,7 @@ Asegurese que que ha clonado el 20480C directorio de GitHub (**https://github.co
           margin-bottom: 10px;
         }
 
-        input[Tipo="submit"] {
+        input[type="submit"] {
           background-color: pink;
           opacity: 0.6;
           width: 200px;
@@ -470,7 +470,7 @@ Asegurese que ha clonado el directorio de GitHub (**https://github.com/Microsoft
 5. Abrir el archivo **index.html**.
 6. En el archivo **index.html** , agregar el siguiente texto:
    ```html
-        <!DOCTipo html>
+        <!DOCTYPE html>
         <html>
         <head>
             <meta charset="utf-8" />
