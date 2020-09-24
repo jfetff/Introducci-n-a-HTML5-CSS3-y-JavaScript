@@ -217,39 +217,38 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 
 #### Paso 1: Escriba código para obtener el contenido de los inputs de contraseña
 
-1.	En ContosoConf - Microsoft Visual Studio, on the **File** menu, point to **Open**, and then clic **Project/Solution**.
-2.	In the **Open Project** dialog box, go to **[Repository Root]\Allfiles\Mod04\Labfiles\Start\Exercise 2**, clic **ContosoConf.sln**, and then clic **Open**.
->**Note**: If **Security Warning for ContosoConf** dialog box appears, clear **Ask me for every project in this solution** checkbox and then clic **OK**.
-3.	In **Solution Explorer**, expand the **ContosoConf** project, expand the **scripts** folder, and then expand the **pages** folder.
+1.	En ContosoConf - Microsoft Visual Studio, en el menu **File** >> **Open** >> **Project/Solution**.
+2.	En la caja de dialogo **Open Project**, ir a **\Allfiles\Mod04\Labfiles\Start\Exercise 2**, clic **ContosoConf.sln**, y clic **Open**.
+3.	En el **Solution Explorer**, expandir el proyecto **ContosoConf**, expandir el folder **scripts**, y expandir el folder **pages**.
 4.	doble-clic **register.js**.
 5.	Encontrar el siguiente comentario:
    ```javascript
         // TODO: Task 1 - Get the password <input> elements from the DOM by ID
    ```
-6.	After the comment, add the following JavaScript code:
+6.	Después del comentario, agrega el siguiente código JavaScript
    ```javascript
         var passwordInput = document.getElementById("password");
         var confirmPasswordInput = document.getElementById("confirm-password");
    ```
 
-#### Paso 2: Write code to compare the **Password** and **Confirm Password** inputs
+#### Paso 2: Escriba un código para comparar las entradas entre **Password** y **Confirm Password**
 
-1.	In the **register.js** file, find the line containing the following comment:
+1.	En el archivo **register.js**, encontrar la siguiente linea de comentario:
    ```javascript
         // TODO: Task 2 - Compare passwordInput value to confirmPasswordInput value
    ```
-2.	After the comment, add the following JavaScript code:
+2.	Después del comentario, agregra el siguiente código JavaScript
    ```javascript
         var passwordsMatch = passwordInput.value === confirmPasswordInput.value;
    ```
 
-#### Paso 3: Write code to display a custom error message if the passwords differ
+#### Paso 3: Escriba el código que muestra un error personalizado de mensaje si las contraseñas son diferentes
 
-1.	In the **register.js** file, find the comment that starts with the following text:
+1.  En el archivo **register.js**, encontrar el comentario que comienza con las estrellas con el siguiente texto:
    ```javascript
         // TODO: Task 3
    ```
-2.	After this comment, add the following JavaScript code:
+2.	Después de este comentario, agregra el siguiente código JavaScript
    ```javascript
         if (passwordsMatch) {
             // Clear any previous error message.
@@ -260,52 +259,52 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
         }
    ```
 
-#### Paso 4: Add input event listeners to the inputs to call the checkPasswords method
+#### Paso 4: Agregar eventos listeners de entrada a las de llamada del metodo checkPasswords
 
-1.	In the **register.js** file, find the comment that starts with the following text:
+1.	En el archivo **register.js**, encontrar el comentario que comienza con el siguiente texto:
    ```javascript
         // TODO: Task 4
    ```
-2.	After the comment, add the following JavaScript code:
+2.	Después del comentario, agregra el siguiente código JavaScript
    ```javascript
         passwordInput.addEventListener("input", checkPasswords, false);
         confirmPasswordInput.addEventListener("input", checkPasswords, false);
    ```
-3.	In **Solution Explorer**, doble-clic **register.htm**.
-4.	On the **Debug** menu, clic **Start Without Debugging**.
-5.  In navegador, in the **First name** box, escriba **Josh**.
-6.  In the **Last name** box, escriba **Bailey**.
-7.  In the **Email address** box, escriba **josh.bailey\@adatum.com**.
-8.  In the **Choose a password** box, escriba **abc123**.
-9.  In the **Confirm your password** box, escriba **abc456**.
+3.	En **Solution Explorer**, doble-clic **register.htm**.
+4.	En el menu **Debug**, clic **Start Without Debugging**.
+5.  En el navegador, nn la casilla de verificación **First name**, escriba **Josh**.
+6.  En la casilla  **Last name**, escriba **Bailey**.
+7.  En la casilla  **Email address**, escriba **josh.bailey\@adatum.com**.
+8.  En la casilla **Choose a password**, escriba **abc123**.
+9.  En la casilla **Confirm your password**, escriba **abc456**.
 10.  clic **Register**.
-11.  Verificar que **Confirm your password** box displays the following error
+11.  Verificar que la casilla **Confirm your password** muestra el siguiente mensaje de error
 message:
    ```html
        Your passwords don't match. Please escriba the same password again.
    ```
-12.  In the **Confirm your password** box, escriba **abc123**.
-13.  clic **Register**, and Verificar que **Thanks for registering** page appears.
-14.  Close navegador.
+12.  En la casilla **Confirm your password**, escriba **abc123**.
+13.  clic **Register**, verificar que **Thanks for registering** aparace en la página.
+14.  Cerrar navegador.
 
-#### Paso 5: Style elements that are not valid
+#### Paso 5: Estilizar los elementos que no son válidos
 
-1.	In **Solution Explorer**, in the **ContosoConf** project, expand the **styles** folder, and then expand the **pages** folder.
+1.	En el proyecto **Solution Explorer**, in the **ContosoConf**, expandir el folder **styles**, y expandir el folder **pages**.
 2.	doble-clic **register.css**.
-3.	Find the comment that starts with the following text:
+3.	Encontrar el comentario que comienza con el siguiente texto:
    ```css
         /* TODO: Task 5
    ```
-4.	Below the comment, add the following style:
+4.	Por debajo del comentario, agrega el siguiente estilo:
    ```css
         .register form.submission-attempted input:invalid {
             background-color: #f9b2b2;
             outline: none;
         }
    ```
-5.  In **Solution Explorer**, doble-clic **register.htm**.
-6.  On the **Debug** menu, clic **Start Without Debugging**.
-7.  In navegador, clic **Register**.
-8.  Verificar que application highlights the **First name**, **Last name**, **Email address**, **Choose a password**, and **Confirm your password** boxes with colored backgrounds.
-9.  Close navegador.
-10. Close all open windows.
+5.  En **Solution Explorer**, doble-clic **register.htm**.
+6.  En el menu **Debug**, clic **Start Without Debugging**.
+7.  En el navegador, clic **Register**.
+8.  Verificar que la aplicación resalta las casillas **First name**, **Last name**, **Email address**, **Choose a password**, y **Confirm your password** con fondos de color.
+9.  Cerrar navegador.
+10. Cerrar todo.
