@@ -348,7 +348,7 @@ Asegurese que que ha clonado el 20480C directorio de GitHub (**https://github.co
 9.	Para hacer que el header aparezca seprado del resto de contenido, agregar la siguiente regla:
     ```css
         header {
-          pAgregaring-bottom: 10px;
+          padding-bottom: 10px;
           border-bottom: 2px dotted blue;
           margin-bottom: 10px;
         }
@@ -403,7 +403,7 @@ Asegurese que que ha clonado el 20480C directorio de GitHub (**https://github.co
 2.	En el menu **Debug** >> **Start Without Debugging**.
 3.	Verificar que los estilos se han aplicado.
 
-![alt texto](./Mod-2/DemoWebSite/Images/20480B_2_ContactUs_Styled.png "The ContactUs página with styling")
+![alt texto](./Mod-2/DemoWebSite/images/20480B_2_ContactUs_Styled.png "The ContactUs página with styling")
 
 5.	En Google Chrome, presione F12.
 6.	En el **F12** ventana, seleccione el **DOM Explorer**, y entonces doble-clic en el **&lt;html&gt;** elemento.
