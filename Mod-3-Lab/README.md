@@ -3,19 +3,19 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 24 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * El principal objetivo de este laboratorio es hacer usos de las los estilos CSS sobre las páginas htmls **Home** y **About**.
-    * Tener la destreza de construir una aplicación web simple con HTML5 que contengas páginas como **Home** y **About**..
+    * Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
+    * El principal objetivo de este laboratorio es actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
 
 Fecha de entrega: Jueves 24 de septiembre de 2020
 
 >**Objetivos**: 
+* Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
 * El principal objetivo de este laboratorio es actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
-
 
 ## Lab Pasos
 
-## Ejercicio 1: Visualizando Datos de manera programtica
+## Ejercicio 1: Visualizando Datos de manera programática
 
 #### Paso 1: Revisar el código existente en la página Schedule
 
@@ -66,8 +66,9 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
         ];
     ```
 
-#### Paso 2: Agregar el código para obtener una lista de elementos de registros en la pagina schedule.html
+#### Ejercicio 2: Manejando los eventos
 
+#### Paso 1: Agregar etiquetas de casillas de verificación HTML
 
 * Agregar un header en la pagina
 * Agregar una etiqueta section
@@ -98,7 +99,7 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 
 #### Pasos 5: Ejecutar la aplicación web y ver la página schedule
 
-1.	En el Solution Explorer, do0ble-clic **schedule.htm**.
+1.	En el Solution Explorer, doble-clic **schedule.htm**.
 2.	En el menu **Debug**, clic **Start Without Debugging**.
 3.	Verificar que la lista de sesiones se visualiza.
 4.	Cerrar el Navegador.
