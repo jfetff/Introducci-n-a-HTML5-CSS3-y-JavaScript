@@ -1,23 +1,17 @@
-# Módulo 5: Creación de formularios para recoger y validar las entradas de los usuarios
+# Módulo 5: Comunicarse con un servidor remoto
 
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 24 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
-    * Actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
+    * Comunicarse con un servidor remoto y hacer uso del API fetch para obtener datos remotos y publicarlos en la página de nuestro proyecto nuevo creado.
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
 
 Fecha de entrega: Jueves 24 de septiembre de 2020
 
 >**Objetivos**: 
-* Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
-* El principal objetivo de este laboratorio es actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
+* Comunicarse con un servidor remoto y hacer uso del API fetch para obtener datos remotos y publicarlos en la página de nuestro proyecto nuevo creado.
 
-Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a **C:\Usuarios\John Doe\Descargas\20480**, cambia la ruta: **[Raíz del Repositorio]\N-Todos los Archivos 20480CMod01** a **C:\N-Usuarios John Doe\N-Descargas 20480\N-Todos los Archivos 20480CMod01**.
-
-# Módulo 5: Comunicarse con un servidor remoto
-
-Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a **C:\Usuarios\John Doe\Descargas\20480**, cambia la ruta: **[Raíz del Repositorio]\N-Todos los Archivos 20480CMod01** a **C:\N-Usuarios John Doe\N-Descargas 20480\N-Todos los Archivos 20480CMod01**.
+Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a **C:\Usuarios\John Doe\Descargas\20480**, cambia la ruta: **[Raíz del Repositorio]\Allfiles\20480C\Mod01** a **C:\Users\John Doe\Descargas\20480\AllFiles\20480C\Mod01**.
 
 # Lección 3: Enviar y recibir datos usando el API de Fetch
 
@@ -51,23 +45,23 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
     ```html
        <!DOCTYPE html>
         <html>
-        <cabeza>
+        <header>
             <meta charset="utf-8" />
-            <título>HTML Basic</título>
-        </cabeza>
-        <cuerpo>
+            <title>HTML Basic</title>
+        </header>
+        <body>
             <div>
                 <button id="addPersonsBtn">Get Persons</button>
                 <hr />
                 <table id="PersonTable">
                     <tr>
-                        <th>Nombre completo</th>
+                        <th>Full Name</th>
                         <th>Picture</th>
                         <th>Email</th>
                     </tr>
-                </tabla>
+                </table>
             </div>
-        </cuerpo>
+        </body>
         </html>
     ```
 
@@ -91,7 +85,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
         // Agregar el elemento(el) en el padre
         función append(parent, el) {
-            Devuelva parent.appendChild(el); 
+            return parent.appendChild(el); 
         }
     ```
 8. Define un método de sincronización llamado **getPersons**.
@@ -113,7 +107,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
             //Mapping all persons into the table
             data.results.map(function (auther) {
                 //Crear un nuevo elemento para insertar en la tabla
-                const tr = createNode('tr'),
+                    const tr = createNode('tr'),
                     fullNameRow = createNode('td'),
                     PicRow = createNode('td'),
                     PicEl = createNode('img'),
@@ -183,9 +177,9 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
 1.	En **Solution Explorer**, haga doble clic en **Propiedades**.
 2.	En el menú lateral, haz clic en **web**.
-3.	Selecciona la **Página específica**, haz clic en **...**, y luego selecciona **Index.html**. 4. Haga clic en **OK**.
+3.	Selecciona la **Página específica**, haz clic en **...**, y luego selecciona **Index.html**. Haga clic en **OK**.
 4.	Haga clic en **IIS Express (Microsoft Edge)**.
 5.	En Microsoft Edge, haga clic en **Get Persons**.
 6.	Verifica que la tabla lista todas las personas.
-7.	Cierra Microsoft Edge, y luego regresa a Visual Studio.
+7.	Cierra el navegador, y luego regresa a Visual Studio.
 8.  En el menú **Debug**, haga clic en **Detener depuración**.
