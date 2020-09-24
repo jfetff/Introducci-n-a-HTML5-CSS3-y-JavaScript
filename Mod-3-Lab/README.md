@@ -4,7 +4,7 @@
 2. **Fecha:** 24 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
     * Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
-    * El principal objetivo de este laboratorio es actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
+    * Actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
 
 Fecha de entrega: Jueves 24 de septiembre de 2020
@@ -66,16 +66,61 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
         ];
     ```
 
-#### Ejercicio 2: Manejando los eventos
+#### Pasos 2: Escribir el código para obtener el elemento html para la lista de sesiones en la página Schedule
+
+1.	En el Solution Explorer, doble-clic **schedule.js**.
+2.	Después de la linea que contiene **TODO: Task 2**, escribir el siguiente código JavaScript:
+    ```javascript
+        const list = document.getElementById("schedule");
+    ```
+
+#### Pasos 3: Implementar la función createSessionElement function que crea un item de la lista para una sessión
+
+1.	En **schedule.js**, después de la linea que contiene **TODO: Task 3**, escribir el siguiente código JavaScript:
+    ```javascript
+        const li = document.createElement("li");
+        li.textContent = session.title;
+        return li;
+    ```
+
+#### Pasos 4: Implementar la función displaySchedule que agrega un item de sesión a la lista para su visualización
+
+1.	En **schedule.js**, después de la linea que contiene **TODO: Task 4**, escribir el siguiente código JavaScript:
+    ```javascript
+        for (let i = 0; i < schedule.length; i++) {
+            const li = createSessionElement(schedule[i]);
+            list.appendChild(li);
+        }
+    ```
+
+#### Pasos 5: Run the web application and view the Schedule page
+
+1.	En el Solution Explorer, doble-click **schedule.htm**.
+2.	En el menu **Debug**, clic **Start Without Debugging**.
+3.	Verificar que la lista de sesiones se visualizar.
+4.	Cerrar todo.
+
+
+>**Results**: After completing this exercise, you will have added the **Schedule** page, which displays the details of the conference sessions, to the ContosoConf application.
+
+
+
+## Ejercicio 2: Manejando los eventos
 
 #### Paso 1: Agregar etiquetas de casillas de verificación HTML
 
-* Agregar un header en la pagina
-* Agregar una etiqueta section
-1.	En el Solution Explorer, doble-clic **schedule.js**.
-2.	Después de la linea que contiene **TODO: Task 2**, agregar la siguiente linea de JavaScript:
-    ```javascript
-        const list = document.getElementById("schedule");
+1.	En ContosoConf - Visual Studio >> **File** >> **Open** >> **Project/Solution**.
+2.	Abrir **\Allfiles\Mod03\Labfiles\Start\Exercise 2** >> **ContosoConf.sln** >> **Open**.
+3.	En el Solution Explorer, expandir el proyecto **ContosoConf**, doble-clic **schedule.htm**.
+4.	Encontrar el contenido siguiente HTML markup:
+    ```html
+        <ul id="schedule"></ul>
+    ```
+5.	Antes de la linea anterior, escribir el siguientes código  HTML markup:
+Show:
+    ```html
+        <input type="checkbox" id="show-track-1" checked="checked"/><label      for="show-track-1">Track 1</label>
+        <input type="checkbox" id="show-track-2" checked="checked"/><label      for="show-track-2">Track 2</label>
     ```
 
 #### Paso 3: Implementar la función que crea un lista de items para una sesión
@@ -105,101 +150,64 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 4.	Cerrar el Navegador.
 
 
-## Ejercicio 2: Usando estilos para las páginas creadas
+## Ejercicio 2: Manejando Eventos
 
-#### Paso 1: Crear una nueva hoja de estilos 
+#### Paso 1: Agregar casillas de verificación HTML 
 
-* Crear en el proyecto una carpeta: **styles**.
-* Agregar en la carpeta **styles** una hoja de estilos: **Style Sheet**, llamada; **site.css**.
-* En la página **index.htm** después de la etiqueta **&lt;/head&gt;**, insertamos el siguiente código markup:
+1.	En ContosoConf - Visual Studio >> **File** >> **Open** >> **Project/Solution**.
+2.	En la casilla de dialogo **Open Project** >> **\Allfiles\Mod03\Labfiles\Start\Exercise 2** >> **ContosoConf.sln** >> **Open**.
+3.	En el Solution Explorer, expandir el proyecto **ContosoConf**, y doble-clic **schedule.htm**.
+4.	Encontrar el siguientes following HTML markup:
     ```html
-        <link href="/styles/site.css" rel="stylesheet" type="text/css" />
+        <ul id="schedule"></ul>
     ```
-* Hacemos lo mismo para la página **about.htm**.
-* Agregamos antes de **&lt;/head&gt;**, el siguiente código markup:
+5.	Antes de esta última linea, inserte el siguiente HTML markup:
     ```html
-        <link href="/styles/site.css" rel="stylesheet" type="text/css" />
+        <input type="checkbox" id="show-track-1" checked="checked"/><label      for="show-track-1">Track 1</label>
+        <input type="checkbox" id="show-track-2" checked="checked"/><label      for="show-track-2">Track 2</label>
     ```
 
-#### Paso 2: Agregar reglas CSS para el estilo de la páginas
+#### Paso 2: Escribir el código para obtener las casillas de verificación de la página Schedule
 
-* Abrir el archivo **site.css** y borrar todo su contenido.
-* Agregar el siguiente CSS código::
-    ```css
-        html {
-            /* font-size 62.5% makes 1rem equal 10px for easy size calculations. */
-            font-size: 62.5%;
-            font-family: Calibri, Arial, sans-serif;
-            background-color: #EAEEFA;
-        }
+1.	En Solution Explorer, expandir el folder **scripts**, expandir el subfolder **pages**, doble-clic **schedule.js**.
+2.	En **schedule.js**, encontrar la linea de código que contiene el siguiente JavaScript:
+    ```javascript
+        const list = document.getElementById("schedule");
+    ```
+3.	Después de esta lina, agregar el siguientes código JavaScript:
+    ```javascript
+        const track1CheckBox = document.getElementById("show-track-1");
+        const track2CheckBox = document.getElementById("show-track-2");
+    ```
 
-        body {
-            margin: 0;
-            /* Default font-size to about 18px */
-            font-size: 1.8rem;
-        }
+#### Paso 3: Agregar los eventos click listeners para cada casilla de verificación
 
-        .container {
-            padding: 0 1rem;
-            max-width: 94rem;
-            /* Horizontally center containers */
-            margin: 0 auto;
-        }
+1.	En **schedule.js**, agregar el siguientes código JavaScript al final del archivo:
+    ```javascript
+        track1CheckBox.addEventListener("click", displaySchedule, false);
+        track2CheckBox.addEventListener("click", displaySchedule, false);
+    ```
 
-        nav {
-            background-color: #1d1d1d;
-            line-height: 6rem;
-            font-size: 1.7rem;
-        }
+#### Paso 4: Actualizar la función displaySchedule para visualizar las sesiones de los ramas seleecionadas
 
-        nav a {
-            color: #fff;
-            padding: 1rem;
-        }
-
-        h1 {
-            font-size: 4rem;
-            letter-spacing: -1px;
-            margin: 1em 0 .25em 0;
+1.	En el archivo **schedule.js**, en la función **displaySchedule**, reemplazar el cuerpo de bucle **for** con el siguiente código JavaScript:
+    ```javascript
+        const tracks = schedule[i].tracks;
+        const isCurrentTrack = (track1CheckBox.checked && tracks.indexOf(1) >= 0) ||
+                                (track2CheckBox.checked && tracks.indexOf(2) >= 0);
+        if (isCurrentTrack) {
+            const li = createSessionElement(schedule[i]);
+            list.appendChild(li);
         }
     ```
-* doble-clic en **index.htm**.
-* Reemplazar el contenido de **&lt;nav&gt;** con lo siguiente:
-    ```html
-        <div class="container">
-            <a href="/index.htm">Home</a>
-            <a href="/about.htm">About</a>
-        </div>
-    ```
-* Después de la etiqueta **&lt;/nav&gt;** y ante la etiqueta **&lt;header&gt;**, insertar el siguiente código HTML markup:
-    ```html
-        <div class="container">
-    ```
-	Cerrar el elemento **&lt;div&gt;**, antes de **&lt;/body&gt;**:
-    ```html
-        </div>
-    ```
-* En la página **about.htm**, reemplazar el contenido de  **&lt;nav&gt;** con el contenido HTML markup:
-    ```html
-        <div class="container">
-            <a href="/index.htm">Home</a>
-            <a href="/about.htm">About</a>
-        </div>
-    ```
-* Despues de **&lt;/nav&gt;** y antes de **&lt;header&gt;**, insertar el siguientes contenido HTML markup:
-    ```html
-        <div class="container">
-    ```
-* Cerrar **&lt;div&gt;**, y antes de **&lt;/body&gt;** insertar el siguientes contenido HTML markup:
-    ```html
-        </div>
-    ```
-La página Home con el estilo aplicado tendría que verse como:
-![alt text](./ContosoConf/ContosoConf/images/20480B_2_Home.png "Images screenshot")
 
-#### Paso 3: Ejecutar la aplicación web 
+#### Paso 5: Ejecutar la aplicación web y ver si la página Schedule actúa como debe
 
-1.	En el menu **Debug** menu, clic **Start Without Debugging**.
-2.	Verificar que la  página **About** tiene el estilo propio de la página.
-3.	Ir a la página **Home**, vefificar que esta página es consistente con la página **About**.
-4.	Cerrar todo.
+1.	En el Solution Explorer, doble-clic **schedule.htm**.
+2.	En el menu **Debug**, clic **Start Without Debugging**.
+3.	En el navegador, verificar que ambas casillas de verificación seleccionadas muestran la lista completa de las sesiones a visualizar.
+4.	Limpiar **Track 1** y verificar que solo se muestras las sesiones para el **Track 2**.
+5.	Seleccionar **Track 1**, limpiar **Track 2**, y verificar que solo se muestras las sesiones para el Track 1.
+6.	Limpiar **Track 1** y verificar que ni se muestras ninguna de las sesiones.
+7.	Cerrar el navegador.
+6. Cerrar todo.
