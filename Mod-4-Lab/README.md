@@ -86,7 +86,7 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 9.	En la caja **Website/blog**, escriba **http://adatum.com/**.
 10.	clic **Register**.
 11.	Verificar que la aplicación muestra la página **Thanks for registering**.
-12.	Para regresar a la página **Register**, en el header de la página, clic en el link **Register**.
+12.	Regrese a la página **Register**. Note que para poder registrarse tiene que de manera explicita hacer clic y poner el curso en la casilla **First name**. También puede dejar en blanco o escribir cualquier texto sin sentido.
 13.	Dejar la casilla vacia, hacer clic **Register**.
 14.	Verficar que la aplicación muestra el siguiente mensaje:
    ```html
@@ -122,9 +122,9 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 6.	En el menu **Debug**, clic **Start Without DebuggEng**.
 7.	En navegador, verificar que el cursor esta ubicado en la casilla de verficiación **First name**.
 8.	Verificar que la casilla de verificiación **Website/blog** contiene **http://** texto de marcador de posición.
-9.	Cerrrar el navegador.
+9.	Cerrar el navegador.
 
-#### Paso 4: Checkear for datos mandatorios no encontrados
+#### Paso 4: Validar los datos mandatorios no encontrados
 
 1.	En **Solution Explorer**, doble-clic **register.htm**.
 2.	Encontrar la linea que contiene el siguiente código HTML markup:
@@ -207,13 +207,14 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 12.	En la casilla de verificación **Choose a password**, escriba **Passw0rd**.
 13.	En la casilla de verificación **Confirm your password**, escriba **Passw0rd**.
 14.	En la casilla de verificación **Website/blog**, escriba **http://adatum.com/**.
-15.	Clic en **Register** y verifique que la página **Thanks for registerEng** page aparecce.
+15.	Clic en **Register** y verifique que la página **Thanks for registering** page aparecce.
 16.	Cerrar navegador.
 
+---
+---
 
 
-
-### Exercise 2: Validación de la entrada del usuario en JavaScript
+## Exercise 2: Validación de la entrada del usuario en JavaScript
 
 #### Paso 1: Escriba código para obtener el contenido de los inputs de contraseña
 
