@@ -1,8 +1,19 @@
 # Module 2 - Lab: Creando Páginas HTML5 usando CSS3
 
+1. **Nombres y apellidos:** José René Fuentes
+2. **Fecha:** 24 de Septiembre 2020.
+3. **Resumen del Ejercicio:**
+    * El principal objetivo de este laboratorio es hacer usos de las los estilos CSS sobre las páginas htmls **Home** y **About**.
+    * Tener la destreza de construir una aplicación web simple con HTML5 que contengas páginas como **Home** y **About**..
+4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
+
+
+
+Fecha de entrega: Jueves 24 de septiembre de 2020
+
 >**Objetivos**: 
 * El principal objetivo de este laboratorio es hacer usos de las los estilos CSS sobre las páginas htmls **Home** y **About**.
-* Tener la destreza de construir una aplicación web simple con HTML5 que contengas páginas como **Home** u **About**.
+* Tener la destreza de construir una aplicación web simple con HTML5 que contengas páginas como **Home** y **About**.
 
 
 ## Lab Pasos
