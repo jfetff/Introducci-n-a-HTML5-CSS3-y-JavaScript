@@ -18,4 +18,3 @@ C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-4-Lab\Ejercicio-2\Con
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-4-Lab\Ejercicio-2\ContosoConf\obj\Debug\ContosoConf.csproj.CopyComplete
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-4-Lab\Ejercicio-2\ContosoConf\obj\Debug\ContosoConf.dll
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-4-Lab\Ejercicio-2\ContosoConf\obj\Debug\ContosoConf.pdb
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-4-Lab\Ejercicio-2\ContosoConf\obj\Debug\ContosoConf.csprojAssemblyReference.cache
