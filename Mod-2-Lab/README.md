@@ -5,9 +5,9 @@
 * Tener la destreza de construir una aplicación web simple con HTML5 que contengas páginas como **Home** u **About**.
 
 
-### Lab Pasos
+## Lab Pasos
 
-#### Ejercicio 1: Creando Páginas HTML5
+## Ejercicio 1: Creando Páginas HTML5
 
 #### Paso 1: Crear una aplicación web nueva ASP.NET
 
@@ -202,7 +202,7 @@
 *  Verficar que los vínculos de las páginas construidas se funcionan debidamente.
 
 
-### Ejercicio 2: Usando estilos para las páginas creadas
+## Ejercicio 2: Usando estilos para las páginas creadas
 
 #### Paso 1: Crear una nueva hoja de estilos 
 
