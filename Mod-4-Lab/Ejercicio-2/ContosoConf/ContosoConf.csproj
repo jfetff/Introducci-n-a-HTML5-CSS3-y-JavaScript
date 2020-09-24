@@ -90,8 +90,8 @@
     <Content Include="about.htm" />
     <Content Include="registered.htm" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\pages\schedule.js" />
     <Content Include="scripts\pages\register.js" />
+    <Content Include="scripts\pages\schedule.js" />
     <Content Include="schedule.htm" />
     <Content Include="register.htm" />
     <Content Include="images\speakers\david-alexander.jpg" />
