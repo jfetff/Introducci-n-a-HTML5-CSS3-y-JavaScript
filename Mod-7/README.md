@@ -3,14 +3,14 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 24 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * Ver la relación con la ventana del explorador variando sus elementos usando estilos o diferente atributos. Manejamos el navegador para que la ventana sea lo suficientemente pequeña como para requerir el desplazamiento y vea los elementos o que la misma permanezca fija para ver si los elementos usnado atributos y estilos sus elementos se desplazan (no se desplaza a la vista).
+    * En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
     
-4. **Dificultad o problemas presentados y como se resolvieron:** Al no tener algún resultado de como es el comportamiento de los elementos no podríamos poner esfuerzos en ajustar o buscar posibles errores en la aplicación de estilos y/o atributos.
+4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
 
 Fecha de entrega: Jueves 24 de septiembre de 2020
 
 >**Objetivos**: 
-* Ver la relación con la ventana del explorador variando sus elementos usando estilos o diferente atributos. Manejamos el navegador para que la ventana sea lo suficientemente pequeña como para requerir el desplazamiento y vea los elementos o que la misma permanezca fija para ver si los elementos usnado atributos y estilos sus elementos se desplazan (no se desplaza a la vista).
+* En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
 
 Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a to **C:\Users\John Doe\Downloads\20480**, cambiar la ruta de: **[Repository Root]\AllFiles\20480C\Mod01** a **C:\Users\John Doe\Downloads\20480\AllFiles\20480C\Mod01**.
 
