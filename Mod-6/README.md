@@ -3,28 +3,22 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 24 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
-    * Actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
-4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
+    * Ver la relación con la ventana del explorador variando sus elementos usando estilos o diferente atributos. Manejamos el navegador para que la ventana sea lo suficientemente pequeña como para requerir el desplazamiento y vea los elementos o que la misma permanezca fija para ver si los elementos usnado atributos y estilos sus elementos se desplazan (no se desplaza a la vista).
+    
+4. **Dificultad o problemas presentados y como se resolvieron:** Al no tener algún resultado de como es el comportamiento de los elementos no podríamos poner esfuerzos en ajustar o buscar posibles errores en la aplicación de estilos y/o atributos.
 
 Fecha de entrega: Jueves 24 de septiembre de 2020
 
 >**Objetivos**: 
-* Agregar en la página **Schedule** para mostrar las sesiones de la conferencias de la aplicación **ContosoConf**.
-* El principal objetivo de este laboratorio es actualizar la página **Schedule** para filtrar las sesiones basada en que canal o trayectoria han sido seleccionadas.
+* Ver la relación con la ventana del explorador variando sus elementos usando estilos o diferente atributos. Manejamos el navegador para que la ventana sea lo suficientemente pequeña como para requerir el desplazamiento y vea los elementos o que la misma permanezca fija para ver si los elementos usnado atributos y estilos sus elementos se desplazan (no se desplaza a la vista).
 
-Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a **C:\Usuarios\John Doe\Descargas\20480**, cambia la ruta: **[Raíz del Repositorio]\N-Todos los Archivos 20480CMod01** a **C:\N-Usuarios John Doe\N-Descargas 20480\N-Todos los Archivos 20480CMod01**.
+Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a to **C:\Users\John Doe\Downloads\20480**, cambiar la ruta de: **[Repository Root]\AllFiles\20480C\Mod01** a **C:\Users\John Doe\Downloads\20480\AllFiles\20480C\Mod01**.
 
-
-Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a **C:\Usuarios\John Doe\Descargas\20480**, cambia la ruta: **[Raíz del Repositorio]\N-Todos los Archivos 20480CMod01** a **C:\N-Usuarios John Doe\N-Descargas 20480\N-Todos los Archivos 20480CMod01**.
 
 # Lección 2: Elementos de bloque de estilo
 
 ### Demonstration: Cambiar entre los modelos de diseño de las hojas de estilo en cascada (CSS)
 
-#### Pasos de preparación 
-
-Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.com/MicrosoftLearning/20480-Programming-in-HTML5-with-JavaScript-and-CSS3/tree/master/Allfiles**). Contiene los segmentos de código para los laboratorios y demostraciones de este curso.
 
 #### Pasos de la demostración
 
@@ -82,12 +76,12 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
 8.	Presiona F12.
 9. En el panel de herramientas para desarrolladores de F12, haz clic en la opción **Dock Bottom** en la esquina superior derecha, para que puedas ver las ventanas de Microsoft Edge y Developer al mismo tiempo.
-10.	10. Para mostrar la versión completamente expandida de las reglas de diseño aplicadas al contenido HTML, haga clic en la pestaña **Elementos**.
-11. En la pestaña Elementos expandir **cuerpo** y expandir **artículo**.
+10.	Para mostrar la versión completamente expandida de las reglas de diseño aplicadas al contenido HTML, haga clic en la pestaña **Elementos**.
+11. En la pestaña Elementos expandir **body** y expandir **article**.
 12.	Haga clic con el botón derecho del ratón en la entrada **div** y luego seleccione **Agregar atributo**.
 13.	Escriba **style=display: inline** para cada entrada **div**, y luego presione INTRO.
 
-14.	En Microsoft Edge, note que los cuatro elementos **div** están ahora alineados lado a lado por la línea base de texto con las propiedades de altura y anchura ignoradas. Este es el modo de **diseño en línea**.
+14.	En Microsoft Edge, note que los cuatro elementos **div** están ahora alineados lado a lado por la línea base de texto con las propiedades de altura y anchura ignoradas. Este es el modo de **inline layout**.
 
 ![alt text](./Images/20480B_6_Layout-Row.png "Los elementos div en el modo de diseño en línea")
 
@@ -120,7 +114,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 8.	Escriba **izquierda: 2em**, y luego presione ENTER.
 9.	En Microsoft Edge, observe cómo la aplicación posiciona la casilla **tres** en relación a su posición normal.
 10.	En la ventana de F12 Developer Tools, en la pestaña **CSS**, haga clic en la regla **position:relative** para el selector **#three**, cámbiela a **position:absolute**, y luego presione ENTER.
-11.	En Microsoft Edge, observe cómo la aplicación posiciona la casilla **posición:tres** en relación con su bloque de **artículo**.
+11.	En Microsoft Edge, observe cómo la aplicación posiciona la casilla **three** en relación con su bloque de **artículo**.
 12.	En la ventana de F12 Developer Tools, en la pestaña **CSS**, haga clic en la regla **position:absolute** del selector **#three**, cámbiela a **position:fixed**, y luego presione ENTER.
 13.	En Microsoft Edge, observe cómo la aplicación posiciona el cuadro **tres** en relación con la ventana del explorador. Haga que la ventana sea lo suficientemente pequeña como para requerir el desplazamiento y vea cómo la casilla **tres** permanece fija cuando se desplaza (no se desplaza a la vista).
 14.	Cierre Microsoft Edge.
