@@ -11,7 +11,8 @@ import { ScheduleList } from "../ScheduleList.js";
 // TODO: Refactor these variables into properties of the ScheduleList class.
 //       Assign them in the "initialize" method from arguments
 
-constructor(element, localStarStorage) {
+constructor(element, localStarStorage)
+{
 	this.element = element;
 	this.localStarStorage = localStarStorage;
 }
