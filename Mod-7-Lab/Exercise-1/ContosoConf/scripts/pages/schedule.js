@@ -18,7 +18,8 @@ constructor(element, localStarStorage)
 }
 
 // TODO: Refactor these functions into methods of the ScheduleList class.
-async startDownload() {
+async startDownload()
+{
 	// await response of fetch call
 	let response = await fetch("/schedule/list")
 	// transform body to json
