@@ -4,7 +4,7 @@
 2. **Fecha:** 24 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
     * Modificar la página de registro de los conferenciantes para validar las entradas por cada conferenciantes.
-    * El principal objetivo de este laboratorio es modificar la página de registro de la conferencia para validar las entradas de la contraseña..
+    * El principal objetivo de este laboratorio es modificar la página de registro de la conferencia para validar las entradas de la contraseña, haciendo especialmente en estilos, atributos y contraseñas.
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
 
 Fecha de entrega: Jueves 24 de septiembre de 2020
@@ -12,7 +12,7 @@ Fecha de entrega: Jueves 24 de septiembre de 2020
 >**Objetivos**: 
 
 * Modificar la página de registro de los conferenciantes para validar las entradas por cada conferenciantes.
-* El principal objetivo de este laboratorio es modificar la página de registro de la conferencia para validar las entradas de la contraseña.
+* El principal objetivo de este laboratorio es modificar la página de registro de la conferencia para validar las entradas de la contraseña, haciendo especialmente en estilos, atributos y contraseñas.
 
 ## Lab Pasos
 
