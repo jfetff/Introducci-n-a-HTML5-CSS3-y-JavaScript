@@ -108,6 +108,7 @@
     <Content Include="images\sponsors\sponsor1.png" />
     <Content Include="index.htm" />
     <Content Include="scripts\ScheduleItem.js" />
+    <Content Include="scripts\ScheduleList.js" />
     <Content Include="styles\images\stars.png" />
     <Content Include="styles\header.css" />
     <Content Include="styles\footer.css" />

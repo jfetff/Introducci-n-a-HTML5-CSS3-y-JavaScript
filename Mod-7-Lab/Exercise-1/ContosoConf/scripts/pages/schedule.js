@@ -3,43 +3,52 @@
 /// <reference path="../datetime.js" />
 
 //TODO: Import objects/functions from the modules/classes.
-import { LocalStarStorage } from "../LocalStarStorage.js";
-import { ScheduleItem } from "../ScheduleItem.js";
 
-// TODO: Create a ScheduleList class
+import { LocalStarStorage } from "../LocalStarStorage.js";
+import { ScheduleList } from "../ScheduleList.js";
+
 
 // TODO: Refactor these variables into properties of the ScheduleList class.
 //       Assign them in the "initialize" method from arguments
 
-const element, localStarStorage;
+constructor(element, localStarStorage) {
+	this.element = element;
+	this.localStarStorage = localStarStorage;
+}
 
 // TODO: Refactor these functions into methods of the ScheduleList class.
+async startDownload() {
+	// await response of fetch call
+	let response = await fetch("/schedule/list")
+	// transform body to json
+	let data = await response.json();
 
-async function startDownload() {
-    // await response of fetch call
-    let response = await fetch("/schedule/list")
-    // transform body to json
-    let data = await response.json();
-
-    // checking response is ok
-    if (response.ok) {
-        downloadDone(data);
-    } else {
-        downloadFailed();
-    }
+	// checking response is ok
+	if (response.ok) {
+		this.downloadDone(data);
+	} else {
+		this.downloadFailed();
+	}
 }
 
-function downloadDone(responseData) {
-    addAll(responseData.schedule);
+downloadDone(responseData) {
+	this.addAll(responseData.schedule);
 }
 
-function downloadFailed() {
-    alert("Could not retrieve schedule data at this time. Please try again later.");
+downloadFailed() {
+	alert("Could not retrieve schedule data at this time. Please try again later.");
 }
 
-function addAll(itemsArray) {
-    itemsArray.forEach(add); // TODO: When refactoring this, add the `this` argument to `forEach`.
+addAll(itemsArray) {
+	itemsArray.forEach(this.add, this);
 }
+
+add(itemData) {
+	const item = new ScheduleItem(itemData, this.localStarStorage);
+	this.element.appendChild(item.element);
+}
+
+
 
 function add(itemData) {
     const item = new ScheduleItem(itemData, localStarStorage);
@@ -48,9 +57,13 @@ function add(itemData) {
 
 // TODO: Replace the following code by creating a ScheduleList object 
 //       and calling the startDownload method.
-element = document.getElementById("schedule");
-localStarStorage = new LocalStarStorage(localStorage);
-startDownload();
+
+const scheduleList = new ScheduleList(
+	document.getElementById("schedule"),
+	new LocalStarStorage(localStorage)
+);
+scheduleList.startDownload();
+
 // SIG // Begin signature block
 // SIG // MIIaVgYJKoZIhvcNAQcCoIIaRzCCGkMCAQExCzAJBgUr
 // SIG // DgMCGgUAMGcGCisGAQQBgjcCAQSgWTBXMDIGCisGAQQB
