@@ -1,1 +1,118 @@
-<!DOCTYPE html><br /><html lang="en"><br /><head><br /><meta charset="UTF-8"><meta name="viewport" content="width=100, initial-scale=1.0"><br /><title>Javascript Ejercicio - 57</title><br /></head><body><h2 style='text-align:center;'>Ejercicio No 57</h2><br /><p>DRAG DROP<br /><br />You are developing an application for an online retailer. The company ships only to certain countries.<br />The application must:<br />Store a list of country codes in an array<br />Validate the country code of the shipping address against the countries array<br />Include a Boolean value in the array that indicates whether or not you can ship to the country<br />Display a list of countries that can be shipped to if the user inputs a code for a country that the retailer cannot ship to<br />You need to develop the application to meet the requirements.<br />Which code segment or segments should you use? To answer, drag the appropriate segments to the correct targets. Each code segment may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.<br /><br />NOTE: Each correct selection is worth one point.<br /><br />Select and Place:<br /><br /> <br /> <br /><br />Correct Answer:<br /> <br /> <br /><br />Section: Volume B Explanation<br /><br />Explanation/Reference:<br />Explanation:<br />!arr[ctry] is true when the array element is false.<br />The for..in statement iterates over the enumerable properties of an object, in arbitrary order. For each distinct property, statements can be executed.<br />References: https://www.w3schools.com/js/js_arrays.asp<br />https://www.w3schools.com/jsref/jsref_forin.asp<br />https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in<br /> <br />https://www.html5rocks.com/en/tutorials/workers/basics/<br /></p><br /><script><br /></script><br /></body><br /></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head><br />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 57</title>
+</head>
+
+<body>
+    <h2 style='text-align:center;'>Ejercicio No 57</h2><br />
+
+    <table style="width:80%;margin-left:auto;margin-right:auto;">
+        <tr>
+            <td>
+                <p>DRAG DROP<br /><br />
+
+                    You are developing an application for an online retailer. The company ships only to certain
+                    countries.<br /><br />
+
+                    The application must:<br /><br />
+
+                    <ul>
+                        <li>
+                            Store a list of country codes in an array<br />
+                        </li>
+                        <li>
+                            Validate the country code of the shipping address against the countries array<br />
+                        </li>
+                        <li>
+                            Include a Boolean value in the array that indicates whether or not you can ship to the country<br />
+                        </li>
+                        <li>
+                            Display a list of countries that can be shipped to if the user inputs a code for a country that the
+                            retailer cannot ship to<br />
+                        </li>
+                    </ul>
+                    
+                    <br /><br />
+                    You need to develop the application to meet the requirements.
+                    <br /><br />
+
+                    Which code segment or segments should you use? To answer, drag the appropriate
+                    segments to the correct targets. Each code segment may be used once, more than once, or not at all.
+
+                    <br /><br />
+                    You may need to drag the split bar between panes or scroll to view content.<br /><br />
+
+
+                    NOTE: Each correct selection is worth one point.<br /><br />
+
+                    Select and Place:<br />
+
+                    <img src="./img/image84.jpeg" alt="">
+
+                    <br /> <br />
+                    Correct Answer:<br /> <br />
+
+                    <img src="./img/image85.jpeg" alt="">
+                    <br /><br />
+                    Section: Volume B <br /><br />
+
+                    Explanation<br /><br />
+
+                    Explanation/Reference:<br /><br />
+
+                    Explanation:<br /><br />
+                    <ul>
+                        <li>
+                            !arr[ctry] is true when the array element is false.<br />
+                        </li>
+                        <li>
+                            The for..in statement iterates over the enumerable properties of an
+                            object, in arbitrary order. For each distinct property, statements can be executed.<br />
+                        </li>
+                    </ul>
+                    
+                    <br /><br />
+
+                    References:<br /><br />
+                    https://www.w3schools.com/js/js_arrays.asp<br />
+                    https://www.w3schools.com/jsref/jsref_forin.asp<br />
+                    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in<br />
+                    https://www.html5rocks.com/en/tutorials/workers/basics/<br />
+
+                </p>
+
+
+                <br /><br />
+                <hr>
+                <h2 style="color:red">Explicación</h2>
+                Se piden dos bloques de códigos de 5 posibles. El primer bloque de código como podemos ver es que abre parentesis.
+                De esto último se deduce que las posibles soluciones son la 1a o la 3a. 
+                Luego vemos que después del bloque de código que se pide hay una validación para entradas de valores falsos.
+                Eso por que se muestran que "El país no es válido" y luego se muestran los entradas validas. Por eso la única solución que 
+                muestra un condicional para un valor falso es el primer bloque de código.
+                <br /><br />
+                El segundo código que se pide es lo contrario a lo anterior. Es decir si el array existe
+                se tienen que obtener los valores de este, concatenarlos en una cadena para después
+                pintarlos en el div por medio de la cadena final concatenada. Por eso la solución es el bloque de código 2.
+                Hay solo tres posibles soluciones los bloques 2, 4 y 5. El 5to no puede ser ya que une una cadena de texto donde no
+                se obtiene los valores del array. El 4to tampoco ya que el bucle for iterara con una variable i. Además 
+                que no cierra un parentesis o sea daría error en el código.
+                La única solución es el 2do bloque de código.
+
+                <br /><br />
+                <h3 style="color:red">Respuesta:</h3>
+                Para el primer bloque de código de los escogido es el 1ro.
+                Para el segundo bloque de código de los escogido es el 2do.
+                <br /><br />
+                <h3 style="color:red">Fuentes:</h3>
+                Las mismas dadas en la respuesta del ejercicio.
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
