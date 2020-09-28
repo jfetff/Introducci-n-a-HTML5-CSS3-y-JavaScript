@@ -79,30 +79,30 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
         const personApiUrl = "https://randomuser.me/api/?results=3";
 
         //Crear nuevo elemento por nombre de elemento
-        función createNode(element) {
+        function createNode(element) {
             return document.createElement(element); 
         }
 
         // Agregar el elemento(el) en el padre
-        función append(parent, el) {
+        function append(parent, el) {
             return parent.appendChild(el); 
         }
     ```
 8. Define un método de sincronización llamado **getPersons**.
-    "Javascript
-        función de sincronización getPersons() {
+    ```Javascript
+        async function getPersons() {
         }
     ```
 9. Dentro del método **getPersons**, crear **fetch**, llamar a **personApiUrl**, y luego almacenar la respuesta en una variable.
-    "Javascript
-        Deje que la respuesta = espere a que lo traigan (personaApiUrl);
+    ```Javascript
+        let response = await fetch (personaApiUrl);
     ```
 10. Si la **respuesta** está bien, crear una tabla y utilizar la función de mapa para iterar para cada elemento en el elemento de respuesta para generar una fila y añadirla a la tabla.
     ```javascript
-        si (respuesta.ok) {
+        if (response.ok) {
             //Convirtiendo la respuesta a Json
-            datos de la const = espera respuesta.json();
-            /Obtener elemento de la tabla
+            const data = await response.json();
+            //Obtener elemento de la tabla
             const table = document.getElementById("PersonTable");
             //Mapping all persons into the table
             data.results.map(function (auther) {
@@ -126,14 +126,14 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
         }
     ```
 
-11. Envuelve todo el código en el método **getPerson** con **trato-tratamiento**.
+11. Envuelve todo el código en el método **getPerson** con **try-catch**.
     ```javascript
-            /Obtener la solicitud por fetch
-            Deje que la respuesta = espere a que lo traigan (personaApiUrl);
-            si (respuesta.ok) {
+            //Obtener la solicitud por fetch
+            let response = await fetch(personaApiUrl);
+            if (response.ok) {
                 //Convirtiendo la respuesta a Json
-                datos de la const = espera respuesta.json();
-                /Obtener elemento de la tabla
+                const data = espera response.json();
+                //Obtener elemento de la tabla
                 const table = document.getElementById("PersonTable");
                 //Mapping all persons into the table
                 data.results.map(function (auther) {
@@ -156,13 +156,13 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
                 })
             }
         }
-        captura (e) {
+        catch (e) {
             console.log(e);
         }
     ```
 
 12. Añade un oyente de eventos en **DOMContentLoaded**. 13. 13. Obtener el botón de añadir persona por su **addPersonsBtn** ID y luego agregar un escuchador de eventos en el evento **clic** para llamar al método **getPerson**.
-    javascript
+    ```javascript
         document.addEventListener('DOMContentLoaded', function (event) {
             document.getElementById('addPersonsBtn').addEventListener('click', getPersons);
         });
@@ -170,7 +170,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 13. Añade la siguiente etiqueta **script** al elemento **&lt;Head** de la página **index.html**.
     ``html
         <script src="/Scripts/indexScript.js"></script>
-
+    ```
 
 
 #### Ejecute la aplicación web
@@ -179,7 +179,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 2.	En el menú lateral, haz clic en **web**.
 3.	Selecciona la **Página específica**, haz clic en **...**, y luego selecciona **Index.html**. Haga clic en **OK**.
 4.	Haga clic en **IIS Express (Microsoft Edge)**.
-5.	En Microsoft Edge, haga clic en **Get Persons**.
+5.	En el navegador, haga clic en **Get Persons**.
 6.	Verifica que la tabla lista todas las personas.
 7.	Cierra el navegador, y luego regresa a Visual Studio.
 8.  En el menú **Debug**, haga clic en **Detener depuración**.
