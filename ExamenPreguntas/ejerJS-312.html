@@ -1,0 +1,92 @@
+<!DOCTYPE html><br />
+<html lang="en"><br />
+
+<head><br />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0"><br />
+    <title>Javascript Ejercicio - 312</title><br />
+</head>
+
+<body>
+    <h2 style='text-align:center;'>Ejercicio No 312</h2><br />
+    <table style="margin-left:auto;margin-right:auto;">
+        <tr>
+            <td>
+                <p><br />HOTSPOT<br /><br />You have the following code.<br />
+                    <br />
+                    <img src="./img/image536e.jpeg" alt="">
+            
+                    <img src="./img/image537.jpeg" alt="">
+                    <br />
+                    <br />You need to complete the code to meet the following requirements:<br />
+                    <ul>
+                        <li>The call to the Open method must run synchronously.</li>
+                        <li>The parameters in the call must be sent by using the query string.</li>
+                        
+                    </ul>
+                    <br />
+                    How should you complete the code? To answer, select the appropriate options in the answer area.
+                    <br /><br />
+                    
+                    NOTE: Each correct selection is worth one point.<br />
+                    
+                    <br />
+                    Hot Area:
+                    <br />
+                    <img src="./img/image538.jpeg" alt=""><br />
+                    <br /><br />
+                    
+                    Correct Answer:<br />
+                    <img src="./img/image539.jpeg" alt="">
+                    <br /><br />
+                    
+                    Section: Volume D Explanation<br /><br />
+                    
+                    Explanation/Reference:
+                    
+                    <br /> <br />Explanation:<br />
+            
+                    <br />XMLHttpRequest().open(GET, url,false); 
+                    <br />Target 1: GET<br />
+                    GET is required for parameters to be sent in the query string<br />Target 2:
+                    false<br />The default is true, which allows for asynchronous operation. False is for synchronous
+                    operation.
+                    
+                    <br /><br />References:<br />
+            
+                    
+                    <br />https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest<br />
+            
+                    https://stackoverflow.com/questions/6461958/parameter-true-in-xmlhttprequest-open-method<br />
+                </p><br /><br />
+                <hr>
+                <h2 style="color:red">Explicación</h2>
+                    <br />
+                    Según la definición del objento en el documento oficial: <br /> 
+
+                    https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open <br />
+                    La sintaxis es:  <br /> 
+                    XMLHttpRequest.open(method, url[, async[, user[, password]]])<br /> 
+                    <ul>
+                        <li>
+                            El primer argumento es un método es un verbo del http request
+                        </li>
+                        <li>El segundo es un url - DomString</li>
+                        <li>El tercer es async tomando true or false para verificar si la transmisión es asíncrono o no.</li>
+                    </ul>
+                    Por lo tanto el argumento de acuerdo a las condiciones de la pregunta tiene que ser:
+                    <br /> 
+                    (get, url, false)
+
+            </td>
+        </tr>
+    </table>
+
+    
+        <script>
+            <br />
+        </script>
+        <br />
+</body><br />
+
+</html>

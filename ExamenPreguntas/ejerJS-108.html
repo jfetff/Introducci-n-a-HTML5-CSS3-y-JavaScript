@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><br />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 108</title>
+</head>
+
+<body>
+    <h2 style='text-align:center;'>Ejercicio No 108</h2><br />
+
+    <table style="width:80%;margin-left:auto;margin-right:auto;">
+        <tr>
+            <td>
+                <p><br />HOTSPOT<br /><br />
+                    You review a web form that contains the following markup and code:<br />
+                    <img src="./img/image167.jpeg" alt="">
+                    <br /><br />
+                    You need to ascertain how the webpage responds when it loads and how it reacts to user actions.<br /><br />
+                    
+                    For each statement in the table, select Yes if the code segment above causes the page to behave as described. Select No if
+                    it does not. Make only one selection in each column.<br /><br />
+                    
+                    Hot Area:<br /> <br />
+                    <img src="./img/image168.jpeg" alt="">
+
+                    <br /><br />
+                    Correct Answer:<br /><br />
+                    <img src="./img/image169.jpeg" alt="">
+
+                    <br /><br />
+                    Section: Volume C <br /><br />
+                    
+                    Explanation<br /><br />
+                    
+                    Explanation/Reference:<br /><br />
+                </p>
+
+                <br /><br />
+                <hr>
+                <h2 style="color:red">Explicación</h2>
+                Los métodos usados en este ejercicio son onfocus y onblur. La primera pregunta se refiere a cuando se 
+                carga la página, para esto se usa el método onload. Lo anterior hacer falsa la respuesta de la primera pregunta.
+                <br /><br />
+
+                La segunda dice hace refencia a ambos inputs que cambian el color de fondo cuando reciben el focus.
+                Pero la función hace que el color de fondo sea blanco cuando tienen el focus y no amarrillo, por lo tanto es falsa también.
+                <br /><br />
+
+                En la tercera pregunta se hace referencia cuado se pierde el focus. El método usado es correcto el onblur. 
+                Y según la función check2 realmente el color de fondo se cambia a blanco si hay algo en escrito en los inputs.
+                <br /><br />
+                <h3 style="color:red">Respuesta:</h3>
+                <input type="text" id="text1" onfocus="check1(this)" onblur="check1(this)"><br /><br />
+                <input type="text"  id="text2" onfocus="check1(this)" onblur="check1(this)"><br /><br />
+                <input type="radio" name="next" onclick="check2()">
+                <br /><br />
+                <h3 style="color:red">Fuentes:</h3>
+            </td>
+        </tr>
+    </table>
+<script type="text/javascript">
+    function check1(currentTextBox){
+        if(currentTextBox.value === null || currentTextBox.value === '')
+            currentTextBox.style.background = '#fffacd';
+        else   
+            currentTextBox.style.background = '#ffffff';
+    }
+
+    function check2(){
+        var obj = document.getElementsByTagName('input');
+        for(var i = 0; i < (obj.length - 1); i++){
+            obj[i].style.background = '#fffacd';
+        }
+    }
+</script>
+
+</body>
+
+</html>
