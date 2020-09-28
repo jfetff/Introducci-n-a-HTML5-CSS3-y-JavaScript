@@ -4,6 +4,7 @@ i <!DOCTYPE html>
 <head><br />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=100, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <title>Javascript Ejercicio - 7</title>
 </head>
 <body>
@@ -11,7 +12,6 @@ i <!DOCTYPE html>
     <table style="width:80%;margin-left:auto;margin-right:auto;">
         <tr>
             <td>
-
                 <p>You are developing a customer web form that includes the following HTML.<br /><br />
                     <img src="./img/image12.jpeg" alt="">
                     <br /><br />
@@ -50,14 +50,32 @@ i <!DOCTYPE html>
 
                 <hr>
                 <h2 style="color:red">Explicación</h2>
-
+                El .text() obtiene el contenido de texto combinado de cada elemento en el conjunto de elementos coincidentes, 
+                incluidos sus descendientes, o establece el contenido de texto de los elementos coincidentes.
+                .text() puede ser usado con XML y HTML.
                 <br /><br />
                 <h3 style="color:red">Respuesta:</h3>
+                La respuesta se muestra aquí abajo usando JSON y pintando un elemento label por medio de un script. De las cuatro 
+                opciones posibles las dos primeras no son válidas ya que JQuery usa para los elementos .tex() y no .val Por eso
+                las dos últimas la tercera no se puede asignar si no usar el metodo texto y tomar como argumento el objeto JSON 
+                tal y como se muestra en la respuesta.<br /><br />
+                <p id="demo"></p>
+                <label id="txtValue"></label>
                 <br /><br />
                 <h3 style="color:red">Fuentes:</h3>
+                https://api.jquery.com/text/
             </td>
         </tr>
     </table>
+
+
+
+
+    <script>
+        var text = '{"Confirmation": "1234", "FirstName": "John"}';
+        obj = JSON.parse(text);
+        $("#txtValue").text(obj.Confirmation);
+    </script>
 
 
 </body>

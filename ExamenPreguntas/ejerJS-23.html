@@ -28,7 +28,7 @@
                             A. if (length = = = 75)<br />
                         </li>
                         <li>
-                            B. if (length = = 75)<br /> <br />
+                            B. if (length = = 75)<br />
                         </li>
                         <li>
                             C. if (length! = 75)<br />
@@ -73,13 +73,48 @@
                 de la variable y los convertirá a un tipo común y devolverá verdadero si ambos son iguales. 
                 Entonces, comparar el número con una cadena que tenga el mismo valor devolverá verdadero
                 <br /><br />
+                Por discriminación la opcion C no es correcta ya que la condición dice que hay que ejecutar el código
+                si la longitud es igual a 75, aquí no es el caso ya que es desigual.
+                <br /><br />
+                La primera opción o "===" es una comparación en valor y tipo por lo que tampoco es correcta. La demostración 
+                se hace en esta página por medio de alert donde se prueban cada una de las opciones para confirmar que las 
+                respuestas B y D son correctas.
+                <br /><br />
+                Quedan las B y la C. La opción B es correcta ya que compara solo en valor. La opción D es correcta ya 
+                que compara en tipo, que en este caso es cadena.
+                <br /><br />
                 <h3 style="color:red">Respuesta:</h3>
+                Las opciones B y D.
                 <br /><br />
                 <h3 style="color:red">Fuentes:</h3>
                 Las mismas expuestas en la respuesta dada.
             </td>
         </tr>
     </table>
+    <script>
+        var longitud = "75";
+        // probando todas las opciones con alert
+
+        if(longitud === 75)
+            alert("La prueba de que longitud === 75 es verdadera");
+        else
+            alert("La prueba de que longitud === 75 es falsa");
+        
+        if(longitud == 75)
+            alert("La prueba de que longitud == 75 es verdadera");
+        else
+            alert("La prueba de que longitud == 75 es falsa");
+
+        if(longitud != 75)
+            alert("La prueba de que longitud != 75 es verdadera");
+        else
+            alert("La prueba de que longitud != 75 es falsa");
+
+        if (longitud == 75)
+            alert("La prueba de que longitud == 75 es verdadera");
+        else
+            alert("La prueba de que longitud == 75 es falsa");
+    </script>
 </body>
 
 </html>
