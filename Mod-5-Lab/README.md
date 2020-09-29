@@ -135,6 +135,9 @@ En el archivo ** schedule.js **, agregue el siguiente código que se muestra en 
     ```javascript
         request.open("GET", "/schedule/list?fail", true);
     ```
+![alt text](captura.png "Resultado Último Ejercicio.")
+
+
 9. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 10. En el navegador, en la barra de navegación, haga clic en **Programar**.
 11. Verifique que aparezca el mensaje **Servicio actualmente no disponible**.
@@ -193,19 +196,21 @@ En el archivo ** schedule.js **, agregue el siguiente código que se muestra en 
 
 #### Tarea 3: Probar la página Programación
 
-1. En ** Explorador de soluciones **, haga doble clic en ** schedule.htm **.
-2. En el menú ** Depurar **, haga clic en ** Iniciar sin depurar **.
-3. En el navegador, haga clic en la estrella junto a ** Nuevas tecnologías en la empresa **.
+1. En **Explorador de soluciones**, haga doble clic en **schedule.htm**.
+2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
+3. En el navegador, haga clic en la estrella junto a **Nuevas tecnologías en la empresa**.
 4. Verifique que se muestre el siguiente mensaje de alerta:
-    `` `javascript
+    ```javascript
         ¡Esta sesión es muy popular! Asegúrese de llegar temprano para conseguir un asiento.
-    ''
-5. En el cuadro de diálogo ** Mensaje de la página web **, haga clic en ** Aceptar **.
-6. Haga clic en la estrella junto a ** Sumérjase en lo más profundo con Canvas **.
+    ```
+5. En el cuadro de diálogo **Mensaje de la página web**, haga clic en **Aceptar**.
+6. Haga clic en la estrella junto a **Sumérjase en lo más profundo con Canvas**.
 7. Verifique que no se muestre ningún mensaje de alerta.
 8. Cierre el navegador.
 
-> ** Resultados **: Después de completar este ejercicio, habrá actualizado la página ** Programación ** para enviar selecciones de asistentes a un servicio web y mostrar un mensaje cuando una sesión sea popular.
+![alt text](capturaEjer-2.png "Resultado Último Ejercicio.")
+
+> **Resultados**: Después de completar este ejercicio, habrá actualizado la página **Programación** para enviar selecciones de asistentes a un servicio web y mostrar un mensaje cuando una sesión sea popular.
 
 
 ### Ejercicio 3: Refactorización del código mediante el método async await fetch.
