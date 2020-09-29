@@ -6,8 +6,11 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** Jose Rene Fuentes Cortez
 2. **Fecha:** 29 de Septiembre 2020.
-3. **Resumen del Ejercicio:** (Respondiendo a la siguiente pregunta: ¿Cuál es el objetivo del ejercicio? y los pasos realizados para su cumplimiento.
-4. **Dificultad o problemas presentados y como se resolvieron:** Errores en la consola del programa, la página web no realizaba los cambios solicitados, etc.
+3. **Resumen del Ejercicio:** 
+    1. En el ejercicio 1 se modifica la página **schedule** para mostrar la lista de sesiones almacenadas en el servicio Web y al mismo tiempo se manejan los errores que pueden ocurrir cuando se comunica con un sistema remoto.
+    2. El ejercicio 2 actualiza la página **schedule** y envía solicitudes para atender sesiones por parte de los participantes como un servicio Web. Después de un número de sesiones escogidas se muestra un mensaje por medio de un **alert** de forma amigable.
+    3. El ejercicio 4 nos muestra como refactorizar el código de javaScript que envía y recibe datos usando métodos de JQuery con ajaz.
+4. **Dificultad o problemas presentados y como se resolvieron:** Al inicio parecía que los ejercicios no corrían y eso es porque el cache del navegador se mantenía y no se mostraban por ejemplos las "stars" en las sesiones que se quiere seleccionar. Una vez que limplia el cache del navegador el ejercicio se concluye como se debe.
 
 **NOTA**: Si no hay descripcion de problemas o dificultades, y al yo descargar el código para realizar la comprobacion y el código no funcionar, el resultado de la califaciación del laboratorio será afectado.
 

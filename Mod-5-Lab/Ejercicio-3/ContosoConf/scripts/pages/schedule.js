@@ -5,7 +5,7 @@ const track2CheckBox = document.getElementById("show-track-2");
 
 const downloadSchedule = async () => {
     // await response of fetch call
-    let response = await fetch("/schedule/list");
+    let response = await fetch("/schedule/list?fail");
 
     // checking response is ok
     if (response.ok) {
