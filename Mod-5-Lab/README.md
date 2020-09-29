@@ -276,6 +276,9 @@ En el archivo **schedule.js**, reemplace la función **saveStar** con el siguien
     ```javascript
         ¡Esta sesión es muy popular! Asegúrese de llegar temprano para conseguir un asiento.
     ```
+
+![alt text](capturaEjer-2.png "Resultado Último Ejercicio.")
+
 6. En el cuadro de diálogo **Mensaje de la página web**, haga clic en **Aceptar**.
 7. Haga clic en el icono de la estrella junto a **Buceando en el fondo con Canvas**.
 8. Verifique que no se muestre ningún mensaje de alerta.

@@ -5,7 +5,7 @@ const track2CheckBox = document.getElementById("show-track-2");
 
 const downloadSchedule = async () => {
     // await response of fetch call
-    let response = await fetch("/schedule/list?fail");
+    let response = await fetch("/schedule/list");
 
     // checking response is ok
     if (response.ok) {
@@ -59,7 +59,6 @@ const saveStar = async (sessionId, isStarred) => {
     const headers = new Headers({
         "Content-Type": "application/x-www-form-urlencoded"
     })
-
 
     const options = {
         method: 'POST',
