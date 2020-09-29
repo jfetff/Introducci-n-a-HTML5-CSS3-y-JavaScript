@@ -331,7 +331,7 @@ Fecha de entrega: Viernes 25 de septiembre de 2020
 >**Resultados**: Después de completar este ejercicio, habrás puesto estilo al enlace **Registrarse** en el encabezado de la página **Casa**.
 
 
-## Exercise 3: Styling the About Page
+## Ejercicio 3: Esilizar la página About
 
 ### Tarea 1: Revisar el HTML y el CSS
 
