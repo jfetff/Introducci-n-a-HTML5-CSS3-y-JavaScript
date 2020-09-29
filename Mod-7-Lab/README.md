@@ -1,7 +1,7 @@
 # Módulo 7: Crear objetos y métodos usando JavaScript
 
 1. **Nombres y apellidos:** José René Fuentes
-2. **Fecha:** 24 de Septiembre 2020.
+2. **Fecha:** 29 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
     * En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
     
@@ -39,29 +39,29 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 7. Para el nombre del elemento, agregue **ScheduleList.js**, y luego haga clic en **Ok**.
 8. Añada el siguiente código JavaScript:
 	```javascript
-		importar { ScheduleItem } de "./ScheduleItem.js";
+		import { ScheduleItem } from "./ScheduleItem.js";
 
-		exportar la clase ScheduleList {
-			//TODO: Añadir Constructor
+		export class ScheduleList {
+			//TODO: Add Constructor
 		}
 		
-		//TODO: Añadir métodos
+		//TODO: Add methods
 	```
-9.	En **programa.js**, encuentre y elimine el siguiente comentario:
+9.	En **schedule.js**, encuentre y elimine el siguiente comentario:
 	```javascript
         // TODO: Crear una clase de ScheduleList.
     ```
 
 #### Tarea 2: Convertir las variables en propiedades de la clase ScheduleList
 
-1.	En **scrodule.js**, encuentra el siguiente comentario:
+1.	En **schedule.js**, encuentra el siguiente comentario:
     ```javascript
-        // TODO: Refactoriza estas variables en propiedades de la clase ScheduleList.
-		// Asignarlas en el método "inicializar" a partir de los argumentos
+        // TODO: Refactor these variables into properties of the ScheduleList class.
+		// Assign them in the "initialize" method from arguments
     ```
 2.	Borre la siguiente línea de código JavaScript después de este comentario:
     ```javascript
-        elemento constante, localStarStorage;
+        const element, localStarStorage;
     ```
 
 3.	En **ScheduleList.js**, encuentra el siguiente código JavaScript:
@@ -69,86 +69,86 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
         //TODO: Añadir Constructor
     ```
 4.	Reemplaza el código por la siguiente línea de código JavaScript:
-    "Javascript
-        constructor(elemento, localStarStorage) {
-			este.elemento = elemento;
+    ``` Javascript
+        constructor(element, localStarStorage) {
+			this.element = element;
 			this.localStarStorage = localStarStorage;
 		}
     ```
 	
-#### Tarea 3: Convertir las funciones en métodos de la clase ScheduleList
+### Tarea 3: Convertir las funciones en métodos de la clase ScheduleList
 
-1.	En **scrodule.js**, encuentra el siguiente código JavaScript:
+1.	En **schedule.js**, encuentra el siguiente código JavaScript:
     ```javascript
-        // TODO: Refactoriza estas funciones en métodos de la clase ScheduleList.
+    // TODO: Refactor these functions into methods of the ScheduleList class.
     ```
-2.	Borre las funciones **inicioDescarga**, **descargaHecha**, **descargaFallido**, **añadirTodo**, y **añadir** que siguen a este comentario.
+2.	Borre las funciones **startDownload**, **downloadDone**, **downloadFailed**, **addAll**, y añadir las funciones **add** que continuan al comentario.
 3.  En **ScheduleList.js**, encuentra el siguiente comentario:
     ```javascript
         //TODO: Añadir métodos
     ```
-3.	Reemplaza el código por el siguiente código JavaScript:
-    "Javascript
+4.	Reemplaza el código por el siguiente código JavaScript:
+    ``` Javascript
 		async startDownload() {
-			// esperar la respuesta de la llamada de búsqueda
-			let response = await fetch("/sched/list")
-			// transformar el cuerpo en json
+			// await response of fetch call
+			let response = await fetch("/schedule/list")
+			// transform body to json
 			let data = await response.json();
 	
-			// comprobar la respuesta está bien
-			si (respuesta.ok) {
+			// checking response is ok
+			if (response.ok) {
 				this.downloadDone(data);
-			} más {
+			} else {
 				this.downloadFailed();
 			}
 		}
 
 		downloadDone(responseData) {
-			este.addAll(programa.de.datos.de.respuesta);
+			this.addAll(responseData.schedule);
 		}
 
 		downloadFailed() {
-			alerta ("No pude recuperar los datos del programa en este momento. Por favor, inténtelo de nuevo más tarde");
+			alert("Could not retrieve schedule data at this time. Please try again later.");
 		}
 
 		addAll(itemsArray) {
-			itemsArray.forEach(esto.agregar, esto);
+			itemsArray.forEach(this.add, this);
 		}
 
 		add(itemData) {
-			const item = nuevo ScheduleItem(itemData, this.localStarStorage);
+			const item = new ScheduleItem(itemData, this.localStarStorage);
 			this.element.appendChild(item.element);
 		}
     ```
 
 #### Tarea 4: Crear y utilizar un objeto ScheduleList
 
-1.	En **scrodule.js**, encuentra el siguiente código JavaScript:
+1.	En **schedule.js**, encuentra el siguiente código JavaScript:
     ```javascript
-        // TODO: Reemplaza el siguiente código creando un objeto ScheduleList 
-        // y llamando al método startDownload.
+        // TODO: Replace the following code by creating a ScheduleList object 
+        //       and calling the startDownload method.
         element = document.getElementById("schedule");
         localStarStorage = LocalStarStorage.create(localStorage);
         startDownload();
     ```
 2.	Borre este bloque de código JavaScript y reemplácelo por el siguiente código:
-    "Javascript
+    ``` Javascript
 		const scheduleList = new ScheduleList(
 			document.getElementById("schedule"),
-			nuevo LocalStarStorage(localStorage)
+			new LocalStarStorage(localStorage)
 		);
 		scheduleList.startDownload();
     ```
 3.	Encuentra el siguiente código JavaScript:
     ```javascript
-		//Importar objetos/funciones de los módulos/clases.
-		importar { LocalStarStorage } de "../LocalStarStorage.js";
-		importar { ScheduleItem } de "../ScheduleItem.js";
+		//TODO: Import objects/functions from the modules/classes.
+		import { LocalStarStorage } from "../LocalStarStorage.js";
+		import { ScheduleItem } from "../ScheduleItem.js";
     ```
 4.	Borre este bloque de código JavaScript y reemplácelo por el siguiente código:
-    "Javascript
-		importar { LocalStarStorage } de "../LocalStarStorage.js";
-		importar { ScheduleList } de "../ScheduleList.js";
+    ``` javascript
+		import { LocalStarStorage } from "../LocalStarStorage.js";
+		import { ScheduleList } from "../ScheduleList.js";
     ```
 
 
@@ -156,13 +156,13 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
 1.	En **Solution Explorer**, haga doble clic en **schedule.htm**.
 2.	En el menú **Debug**, haga clic en **Start Without Debugging**.
-3.	En Microsoft Edge, si la **Configuración de la Intranet está desactivada por defecto** del objeto **ScheduleList** aparece, haga clic en **No mostrar este mensaje de nuevo**.
+3.	En el navegador, si la **Configuración de la Intranet está desactivada por defecto** del objeto **ScheduleList** aparece, haga clic en **No mostrar este mensaje de nuevo**.
 4.	Verifica que la página se vea similar a la imagen de abajo:
 
 ![alt text](./Imágenes/20480B_7_Schedule-Refactored.png "La página del Schedule")
 
-5.	Cerrar Microsoft Edge.
-6.      Cierre todas las ventanas abiertas.
+5.	Cerrar el navegador.
+6.  Cierre todas las ventanas abiertas.
 
 >**Resultados**: Al completar este ejercicio, has usado objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible.
 Después de completar este ejercicio, habrá refactorizado el código JavaScript para que la página **Calendario** sea más mantenible usando objetos.
