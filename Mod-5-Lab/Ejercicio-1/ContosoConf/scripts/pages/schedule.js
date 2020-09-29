@@ -11,6 +11,7 @@ const track2CheckBox = document.getElementById('show-track-2');
 
 function downloadSchedule() {
     const request = new XMLHttpRequest();
+
     request.open("GET", "/schedule/list", true);
     request.onreadystatechange = function () {
         if (request.readyState === 4) {

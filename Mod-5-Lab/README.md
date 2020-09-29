@@ -74,17 +74,17 @@ Asegúrese de haber clonado el directorio 20480C de GitHub (**https: //github.co
     ```
 3. En el archivo **schedule.js**, después de la declaración anterior en la función **downloadSchedule**, agregue el siguiente código JavaScript:
     ```javascript
-        request.open ("OBTENER", "/ horario / lista", verdadero);
+        request.open("GET", "/schedule/list", true);
         request.onreadystatechange = function () {
             if (request.readyState === 4) {
-                respuesta constante = JSON.parse (request.responseText);
-                response.schedule.forEach (función (elemento) {
-                    schedule.push (elemento);
+                const response = JSON.parse(request.responseText);
+                response.schedule.forEach(function (element) {
+                    schedule.push(element);
                 });
-                displaySchedule ();
+                displaySchedule();
             }
         };
-        petición enviada();
+        request.send();
     ```
 4. Agregue la siguiente declaración al final del archivo **schedule.js**:
     ```javascript
@@ -95,27 +95,27 @@ Asegúrese de haber clonado el directorio 20480C de GitHub (**https: //github.co
 
 En el archivo ** schedule.js **, agregue el siguiente código que se muestra en negrita a la función ** downloadSchedule **:
 ```javascript
-        function downloadSchedule () {
-            solicitud constante = nueva XMLHttpRequest ();
-            request.open ("OBTENER", "/ horario / lista", verdadero);
+        function downloadSchedule() {
+            const request = new XMLHttpRequest();
+            request.open("GET", "/schedule/list", true);
             request.onreadystatechange = function () {
                 if (request.readyState === 4) {
-                    tratar {
-                        respuesta constante = JSON.parse (request.responseText);
+                    try {
+                        const response = JSON.parse(request.responseText);
                         if (request.status === 200) {
-                            response.schedule.forEach (función (elemento) {
-schedule.push (elemento);
-});
-                            displaySchedule ();
-                        } más {
-                            alerta (respuesta.mensaje);
+                            response.schedule.forEach(function (element) {
+								schedule.push(element);
+							});
+                            displaySchedule();
+                        } else {
+                            alert(response.message);
                         }
-                    } captura (excepción) {
-                        alerta ("Lista de horarios no disponible");
+                    } catch (exception) {
+                        alert("Schedule list not available.");
                     }
                 }
             };
-            petición enviada();
+            request.send();
         }
 ```
 
@@ -128,12 +128,12 @@ schedule.push (elemento);
 5. Cierre Navegador.
 6. En ContosoConf - Microsoft Visual Studio, haga doble clic en el archivo **schedule.js**.
 7. En la función **downloadSchedule**, busque la siguiente declaración:
-    `` `javascript
-        request.open ("OBTENER", "/ horario / lista", verdadero);
+    ```javascript
+       request.open("GET", "/schedule/list", true);
     ```
 8. Cambie la URL en esta declaración como se muestra en el siguiente código:
     ```javascript
-        request.open ("GET", "/ schedule / list? fail", true);
+        request.open("GET", "/schedule/list?fail", true);
     ```
 9. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
 10. En el navegador, en la barra de navegación, haga clic en **Programar**.
@@ -179,16 +179,16 @@ schedule.push (elemento);
     ```
 2. Después de esta declaración, agregue el siguiente código JavaScript:
     ```javascript
-         if (isStarred) {
-             request.onreadystatechange = function () {
-                 if (request.readyState === 4 && request.status === 200) {
-                     respuesta constante = JSON.parse (request.responseText);
-                     if (response.starCount> 50) {
-                         alert ("¡Esta sesión es muy popular! Asegúrese de llegar temprano para conseguir un asiento");
-                     }
-                 }
-             };
-         }
+        if (isStarred) {
+            request.onreadystatechange = function() {
+                if (request.readyState === 4 && request.status === 200) {
+                    const response = JSON.parse(request.responseText);
+                    if (response.starCount > 50) {
+                        alert("This session is very popular! Be sure to arrive early to get a       seat.");
+                    }
+                }
+            };
+        }
     ```
 
 #### Tarea 3: Probar la página Programación
@@ -218,47 +218,48 @@ schedule.push (elemento);
 3. En el Explorador de soluciones, expanda la carpeta **scripts**, expanda la carpeta **páginas** y luego haga doble clic en **schedule.js**.
 4. En el archivo **schedule.js**, reemplace la función **downloadSchedule** con el siguiente código JavaScript:
 ```javascript
-        const downloadSchedule = async () => {
-        // espera la respuesta de la llamada de recuperación
-        let response = await fetch ("/agenda/lista");
+		const downloadSchedule = async () => {
+			   // await response of fetch call
+			   let response = await fetch("/schedule/list");
 
-        // comprobar que la respuesta está bien
-        if (response.ok) {
-            // transformar cuerpo a json
-            let data = await response.json ();
-            schedule = data.schedule;
-            displaySchedule ();
-        }
-        else
-            alert ("Lista de horarios no disponible");
-        }
+			   // checking response is ok
+			   if (response.ok) {
+				   // transform body to json
+				   let data = await response.json();
+				   schedules = data.schedule;
+				   displaySchedule();
+			   }
+			   else
+				   alert("Schedule list not available.");
+		}
 ```
 #### Tarea 2: Refactorizar la función saveStar
 
 En el archivo **schedule.js**, reemplace la función **saveStar** con el siguiente código JavaScript:
 ```javascript
-    const saveStar = async (sessionId, isStarred) => {
+	const saveStar = async (sessionId, isStarred) => {
 
-        const header = nuevos Headers ({
-        "Content-Type": "application / x-www-form-urlencoded"
-        })
+		const headers = new Headers({
+			"Content-Type": "application/x-www-form-urlencoded"
+		})
 
-        const options = {
-            método: 'POST',
-            headers: headers,
-            body: "starred =" + isStarred
-        }
 
-        const response = await fetch ("/schedule/star/" + sessionId, opciones);
+		const options = {
+			method: 'POST',
+			headers: headers,
+			body: "starred=" + isStarred
+		}
 
-        if (isStarred) {
-            if (response.ok) {
-                const data = await response.json ();
-                if (data.starCount > 50)
-                    alert ("¡Esta sesión es muy popular! Asegúrese de llegar temprano para conseguir un asiento");
-                }
-            }
-        }
+		const response = await fetch("/schedule/star/" + sessionId, options);
+
+		if (isStarred) {
+			if (response.ok) {
+				const data = await response.json();
+				if (data.starCount > 50)
+					alert("This session is very popular! Be sure to arrive early to get a seat.");
+			}
+		}
+	}
 ```
 #### Tarea 3: Probar la página Programación
 
