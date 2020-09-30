@@ -85,8 +85,6 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 5.	En la ventana **F12 Herramientas para desarrolladores**, pulse **Red**.
 6.	En la barra de herramientas **F12 Herramientas para desarrolladores**, haga clic en **Iniciar sesión de perfiles**.
 
-
-
     * En la siguiente imagen podemos ver como en los pasos entre ellos; podemos hacer uso para rastrear pérdidas de memoria, generar perfiles de CPU en JavaScript y también generar de perfiles de montón:
         1. El panel de perfiles se encuentra en la barra de herramientas en Chrome.
         2. Creación de perfiles uno o varios.
@@ -137,10 +135,6 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
     * Respuesta gráfica a lo expuesto anteriormente - Timeline y orden de aparición del evento agregado:
 
 ![alt text](./Images/fig-7-Timeline.jpg "El panel network en chrome")
-
-
-
-![alt text](./Images/20480B_8_Profile-Capture.png "Profile data for a web page")
 
 
 6.	En la barra de herramientas de **F12 Developer Tools**, en la lista de **Performance**, haga clic en **Timeline**.
