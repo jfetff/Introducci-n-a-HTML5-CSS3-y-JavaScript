@@ -3,14 +3,14 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 29 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
+    * En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible. La idea es aprender a refactorizar el código JavaScript y presentar las diferentes sessiones y aulas de las conferencias dando a los conferencistas la oportunidad de poder inscribirte de manera automática.
     
-4. **Dificultad o problemas presentados y como se resolvieron:** Si que las hay al ejecutar el código final y llamar la función startDownload() el navegador da un error que no la reconoce como función, al parecer no se importa la clase ScheduleList de manera correcta y por eso no la reconoce.
+4. **Dificultad o problemas presentados y como se resolvieron:** Si que las hay al ejecutar el código final y llamar la función startDownload() el navegador da un error que no la reconoce como función. El problema es porque los métodos de la nueva clase ScheduleList quedan fuera de la clase y debieran estar dentro de la clase. En las instrucciones no está muy bien explicado esto y parece que al seguir las instrucciones del LAK uno tiende a poner los métodos de la clase afuera de la misma. 
 
 Fecha de entrega: Martes 29 de septiembre de 2020
 
 >**Objetivos**: 
-* En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
+* En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible. La idea es aprender a refactorizar el código JavaScript y presentar las diferentes sessiones y aulas de las conferencias dando a los conferencistas la oportunidad de poder inscribirte de manera automática.
 
 Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a to **C:\Users\John Doe\Downloads\20480**, cambiar la ruta de: **[Repository Root]\AllFiles\20480C\Mod01** a **C:\Users\John Doe\Downloads\20480\AllFiles\20480C\Mod01**.
 
