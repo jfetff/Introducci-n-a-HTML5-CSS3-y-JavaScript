@@ -3,59 +3,17 @@
 /// <reference path="../datetime.js" />
 
 //TODO: Import objects/functions from the modules/classes.
-
-import { LocalStarStorage } from "../LocalStarStorage.js";
-import { ScheduleList } from "../ScheduleList.js";
-
+import {LocalStarStorage} from "../LocalStarStorage.js";
+import {ScheduleList} from "../ScheduleList.js";
+// TODO: Create a ScheduleList class
 
 // TODO: Refactor these variables into properties of the ScheduleList class.
 //       Assign them in the "initialize" method from arguments
 
-constructor(element, localStarStorage)
-{
-	this.element = element;
-	this.localStarStorage = localStarStorage;
-}
+
 
 // TODO: Refactor these functions into methods of the ScheduleList class.
-async startDownload()
-{
-	// await response of fetch call
-	let response = await fetch("/schedule/list")
-	// transform body to json
-	let data = await response.json();
 
-	// checking response is ok
-	if (response.ok) {
-		this.downloadDone(data);
-	} else {
-		this.downloadFailed();
-	}
-}
-
-downloadDone(responseData) {
-	this.addAll(responseData.schedule);
-}
-
-downloadFailed() {
-	alert("Could not retrieve schedule data at this time. Please try again later.");
-}
-
-addAll(itemsArray) {
-	itemsArray.forEach(this.add, this);
-}
-
-add(itemData) {
-	const item = new ScheduleItem(itemData, this.localStarStorage);
-	this.element.appendChild(item.element);
-}
-
-
-
-function add(itemData) {
-    const item = new ScheduleItem(itemData, localStarStorage);
-    element.appendChild(item.element);
-}
 
 // TODO: Replace the following code by creating a ScheduleList object 
 //       and calling the startDownload method.
@@ -65,6 +23,8 @@ const scheduleList = new ScheduleList(
 	new LocalStarStorage(localStorage)
 );
 scheduleList.startDownload();
+
+
 
 // SIG // Begin signature block
 // SIG // MIIaVgYJKoZIhvcNAQcCoIIaRzCCGkMCAQExCzAJBgUr

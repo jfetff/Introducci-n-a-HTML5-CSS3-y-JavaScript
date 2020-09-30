@@ -3,14 +3,14 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 29 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
+    * En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
     
-4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad.
+4. **Dificultad o problemas presentados y como se resolvieron:** Si que las hay al ejecutar el código final y llamar la función startDownload() el navegador da un error que no la reconoce como función, al parecer no se importa la clase ScheduleList de manera correcta y por eso no la reconoce.
 
-Fecha de entrega: Jueves 24 de septiembre de 2020
+Fecha de entrega: Martes 29 de septiembre de 2020
 
 >**Objetivos**: 
-* En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
+* En este laboratorio hace uso de objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible. La idea es aprender a refactorizar el código JavaScript.
 
 Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a to **C:\Users\John Doe\Downloads\20480**, cambiar la ruta de: **[Repository Root]\AllFiles\20480C\Mod01** a **C:\Users\John Doe\Downloads\20480\AllFiles\20480C\Mod01**.
 
@@ -91,7 +91,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
     ``` Javascript
 		async startDownload() {
 			// await response of fetch call
-			let response = await fetch("/schedule/list")
+			let response = await fetch("/schedule/list");
 			// transform body to json
 			let data = await response.json();
 	
@@ -159,7 +159,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 3.	En el navegador, si la **Configuración de la Intranet está desactivada por defecto** del objeto **ScheduleList** aparece, haga clic en **No mostrar este mensaje de nuevo**.
 4.	Verifica que la página se vea similar a la imagen de abajo:
 
-![alt text](./Imágenes/20480B_7_Schedule-Refactored.png "La página del Schedule")
+![alt text](./Images/20480B_7_Schedule-Refactored.png "La página del Schedule")
 
 5.	Cerrar el navegador.
 6.  Cierre todas las ventanas abiertas.

@@ -14,8 +14,8 @@ C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\Cont
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\bin\System.Web.WebPages.xml
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\bin\System.Web.WebPages.Deployment.xml
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\bin\System.Web.WebPages.Razor.xml
+C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\obj\Debug\ContosoConf.csprojAssemblyReference.cache
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\obj\Debug\ContosoConf.csproj.CoreCompileInputs.cache
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\obj\Debug\ContosoConf.csproj.CopyComplete
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\obj\Debug\ContosoConf.dll
 C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\obj\Debug\ContosoConf.pdb
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-7-Lab\Exercise-1\ContosoConf\obj\Debug\ContosoConf.csprojAssemblyReference.cache
