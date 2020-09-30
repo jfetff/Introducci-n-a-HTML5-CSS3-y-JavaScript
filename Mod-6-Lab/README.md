@@ -6,10 +6,12 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 29 de Septiembre 2020
-3. **Resumen del Ejercicio:** (Respondiendo a la siguiente pregunta: ¿Cuál es el objetivo del ejercicio? y los pasos realizados para su cumplimiento.
-4. **Dificultad o problemas presentados y como se resolvieron:** Errores en la consola del programa, la página web no realizaba los cambios solicitados, etc.
+3. **Resumen del Ejercicio:** Este laboratorio es para estilizar la aplicación por medio de diferentes estilos creados en un archivo externo para cada página. En este laboratorio hay tres ejercicios:
+   1. En el primer ejercicio se ha estilizado la barra de navegación que coincide con una maqueta de diseño.
+   2.  En este ejercicio 2 hacemos estilo al enlace **Registrarse**, además de poner estilos en el encabezado de la página **Home**.
+   3. En este ejercicio estilizamos la página **Acerca de** de tal manera que la página contiene tres columnas.
+4. **Dificultad o problemas presentados y como se resolvieron:** No se presentaron ninguna dificultad.
 
-**NOTA**: Si no hay descripcion de problemas o dificultades, y al yo descargar el código para realizar la comprobacion y el código no funcionar, el resultado de la califaciación del laboratorio será afectado.
 
 Fecha de entrega: Viernes 25 de septiembre de 2020
 
@@ -204,7 +206,7 @@ Fecha de entrega: Viernes 25 de septiembre de 2020
         <header class="page-header">
             <div class="container">
                 <h1>ContosoConf</h1>
-                <p class="tag-line">A two-track conference on the latest HTML5      developments</p>
+                <p class="tag-line">A two-track conference on the latest HTML5 developments</p>
 
                 <a class="register" href="/register.htm">
                     Register<br />
@@ -436,9 +438,10 @@ Fecha de entrega: Viernes 25 de septiembre de 2020
 
 1. En **Explorador de soluciones**, haga doble clic en **about.htm**.
 2. En el menú **Depurar**, haga clic en **Iniciar sin depurar**.
-3. En el navegador, verifique que la página sea similar a la siguiente imagen:
+3. En el navegador, verificamos que la página sea similar a la siguiente imagen:
 
-! [texto alternativo] (./Images/20480B_6_About-Final.png "La página Acerca de")
+![alt text](./Images/20480B_6_About-Final.png "La página Acerca de")
+
 
 4. Cierre el navegador.
 5. Cierre todas las ventanas abiertas.
