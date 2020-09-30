@@ -6,7 +6,6 @@ export class ScheduleList {
 		this.element = element;
 		this.localStarStorage = localStarStorage;
 	}
-}
 
 
 //TODO: Add methods
@@ -40,4 +39,6 @@ async startDownload() {
 add(itemData) {
 	const item = new ScheduleItem(itemData, this.localStarStorage);
 	this.element.appendChild(item.element);
-}
+	}
+
+} // Fin de la clase ScheduleList
