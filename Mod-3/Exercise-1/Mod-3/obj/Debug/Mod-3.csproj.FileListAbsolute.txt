@@ -1,7 +1,0 @@
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\bin\Mod-3.dll.config
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\bin\Mod-3.dll
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\bin\Mod-3.pdb
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\obj\Debug\Mod-3.csprojAssemblyReference.cache
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\obj\Debug\Mod-3.csproj.CoreCompileInputs.cache
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\obj\Debug\Mod-3.dll
-C:\20480\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise-1\Mod-3\obj\Debug\Mod-3.pdb
