@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><br />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 176</title>
+</head>
+
+<body>
+    <h2 style='text-align:center;'>Ejercicio No 176</h2><br />
+    
+    <table style="width:80%;margin-left:auto;margin-right:auto;">
+        <tr>
+            <td>
+    <p>You troubleshoot a webpage that contains the following HTML markup: (Line numbers are included for reference
+        only.)<br /><br />
+        <img src="./img/image280.jpeg" alt=""><br /><br />
+        The webpage also contains the following JavaScript function named someEvent() that is declared in
+        the HEAD section of the HTML:<br />
+        <br /><br />
+        Function someEvent() { <br />
+            Alert('someEvent fired!');<br />
+        }<br />
+        <br /><br />
+        The JavaScript function named someEvent() must run only when the user clicks the DIV element, not the INPUT elements.<br /><br />
+        
+        You need to modify the webpage to invoke the JavaScript function named someEvent(). <br /><br />
+
+        What should you do? (Each correct answer presents a complete solution. Choose two.)<br /> <br /> 
+
+
+                <img src="./img/image281.jpeg" alt="">
+
+                <ul style="list-style: none;">
+                    <li>
+                        A. Option A<br />
+                    </li>
+                    <li>
+                        B. Option B<br />
+                    </li>
+                    <li>
+                        C. Option C<br />
+                    </li>
+                    <li>
+                        D. Option D<br /><br />
+                    </li>
+                </ul>
+                <br />Correct Answer: AB <br />Section: Volume D<br /><br />
+                Explanation<br /><br />Explanation/Reference:<br /></p><br />
+
+                <br /><br />
+                <hr>
+                <h2 style="color:red">Explicación</h2>
+                En el modelo de registro de eventos en línea, los controladores de eventos se agregan como atributos a los elementos HTML en los que estaban trabajando, como:
+                <br /><br />
+                &lt;A HREF="somewhere.html" onClick="alert('¡He hecho clic !')"&gt;<br /><br />
+
+                Cuando se produce un evento de clic en el enlace, se invoca el controlador de eventos y se ejecuta el script: 
+                se muestra una alerta. También puede invocar una función de JavaScript:<br /><br />
+                
+                &lt;A HREF="somewhere.html" onClick="doSomething()"&gt;
+                <br /><br />
+                El método event.stopPropagation () detiene la propagación de un evento a los elementos principales, lo que evita que se ejecuten los controladores de eventos principales.
+                <br /><br />
+                Es útil usar el método event.isPropagationStopped() para comprobar si este método fue llamado para el evento.<br /><br />
+                <h3 style="color:red">Respuesta:</h3>
+                La representación gráfica de la respuesta "a" usando la función stopPropagation en cada uno de los inputs se muestra a continuación:<br /><br />
+                <div style="background-color: lightgray;" onclick="someEvent()">
+                    <input type="radio" name="sizeRadio" id="sizeRadioSm1" value="1" onclick="stopPropagtion(event)">
+                    <label for="sizeRadioSm1">Small</label>
+                    <input type="radio" name="sizeRadio" id="sizeRadioMed" value="2" onclick="stopPropagtion(event)">
+                    <label for="sizeRadioMed">Medium</label>
+                    <input type="radio" name="sizeRadio" id="sizeRadioLrg" value="3" onclick="stopPropagtion(event)">
+                    <label for="sizeRadioLrg">Large</label>
+                </div>
+                <br /><br />
+                La representación gráfica de la respuesta "b" usando la etiqueta span para anidar los inputs se muestra a continuación:<br /><br />
+                <div style="background-color: lightgray;" onclick="someEvent()">
+                    <span>
+                        <label for="sizeRadioSm1">Small</label>
+                        <input type="radio" name="sizeRadio" id="sizeRadioSm1" value="1">
+                    </span>
+                    <span>
+                        <label for="sizeRadioMed">Medium</label>
+                        <input type="radio" name="sizeRadio" id="sizeRadioMed" value="2">
+                    </span>
+                    <span>
+                        <label for="sizeRadioLrg">Large</label>
+                        <input type="radio" name="sizeRadio" id="sizeRadioLrg" value="3">
+                    </span>
+                    
+                </div>
+                <br /><br />
+                <h3 style="color:red">Fuentes:</h3>
+                https://www.w3schools.com/jquery/event_stoppropagation.asp#:~:text=stopPropagation()%20method%20stops%20the,was%20called%20for%20the%20event.
+            </td>
+        </tr>
+    </table>
+
+<script>
+        function someEvent() {
+            alert('someEvent fired!');
+        }
+    function stopPropagtion(event){
+        event = event || window.event;
+        if(event.stopPropagtion){
+            event.stopPropagtion();
+
+        }else{
+            event.cancelBubble = true;
+        }
+    }
+
+</script>
+</body>
+
+</html>

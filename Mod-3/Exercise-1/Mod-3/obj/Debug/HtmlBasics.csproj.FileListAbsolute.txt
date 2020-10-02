@@ -1,0 +1,7 @@
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\bin\HtmlBasics.dll.config
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\bin\HtmlBasics.dll
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\bin\HtmlBasics.pdb
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\obj\Debug\HtmlBasics.csprojAssemblyReference.cache
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\obj\Debug\HtmlBasics.csproj.CoreCompileInputs.cache
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\obj\Debug\HtmlBasics.dll
+C:\Users\jfetf\Desktop\web Cloud\1 - Modulo 1 HTML JavaScript CSS3\Tareas\Programming-in-HTML5-with-JavaScript-and-CSS3\Mod-3\Exercise 1\HtmlBasics\HtmlBasics\obj\Debug\HtmlBasics.pdb

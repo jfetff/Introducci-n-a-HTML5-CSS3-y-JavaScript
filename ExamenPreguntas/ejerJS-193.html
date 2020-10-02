@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><br />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 193</title>
+</head>
+
+<body>
+    <h2 style='text-align:center;'>Ejercicio No 193</h2>
+
+    <table style="width:80%;margin-left:auto;margin-right:auto;">
+        <tr>
+            <td>
+                <table style="width:80%;margin-left:auto;margin-right:auto;">
+                    <tr>
+                        <td>
+                            <p>You are developing an HTML5 page named main.html. The JavaScript code for the main page is located in
+                                a file named myApp.js.<br /><br /><br />
+                            You need to create a web worker and instantiate it from main.html. 
+                            <br /><br />
+                            Where should you place  the web worker code?<br /><br />
+                            
+                            <ul style="list-style: none;">
+                                <li>
+                                    A. In the myApp.js file<br />
+                                </li>
+                                <li>
+                                    B. In the main.html file<br />
+                                </li>
+                                <li>
+                                    C. In a separate .js (JavaScript) file<br />
+                                </li>
+                                <li>
+                                    D. In a separate executable file<br /><br />
+                                </li>
+                            </ul>
+                            
+                            Correct Answer: C
+                            <br />Section: Volume D
+                            <br /><br />
+                            Explanation:<br /><br />
+                            Explanation/Reference:<br />
+                            
+                            Explanation:<br />Spawning a dedicated worker<br /><br /><br />
+                            
+                            
+                            Creating a new worker is simple. All you need to do is call the Worker() constructor, specifying the
+                            URI of a script to execute in the worker thread (main.js):<br />var myWorker = new
+                            Worker("worker.js");<br /><br />
+                            
+                            Reference:<br />
+                            https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers<br /></p>
+                            <br />
+                            <br /><br />
+                            <hr>
+                            <h2 style="color:red">Explicación</h2>
+                            Un web worker es un JavaScript que se ejecuta en segundo plano, independientemente de otros scripts, 
+                            sin afectar el rendimiento de la página. 
+                            Puede continuar haciendo lo que quiera: hacer clic, seleccionar cosas, etc., mientras el trabajador web se ejecuta en segundo plano.<br />
+                            Como tiene que ir un .js independiente esto no incluye los presentes que ya tuvieramos en nuestro trabajo o proyecto web.
+                            <h3 style="color:red">Respuesta:</h3>
+                            Por lo anterior escrito la respuesta es la C.
+                            <h3 style="color:red">Fuentes:</h3>
+                            https://www.w3schools.com/html/html5_webworkers.asp
+                        </td>
+                    </tr>
+                </table>
+</body>
+
+</html>
