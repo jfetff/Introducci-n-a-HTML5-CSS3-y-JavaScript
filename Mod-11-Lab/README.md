@@ -117,7 +117,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 5.	En **Solution Explorer**, expande la carpeta **scripts**, expande la carpeta **pages**, y luego haz doble clic en **location-venue.js**.
 6.	Encuentra el siguiente comentario:
 
-   ```
+    ```javascript
         // TODO: Get the room elements in the svg element.
     ```
 
@@ -257,15 +257,15 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
 1.	En **Solution Explorer**, haga doble clic en **speaker-badge.htm**.
 2.	En el menú **Debug**, haga clic en **Iniciar sin depuración**.
-3.	3. En la barra de tareas, haz clic en **Explorador de archivos**, y luego busca la carpeta **[Repository Root]\Allfiles\Mod11\Labfiles\Resources**.
+3.	En la barra de tareas, haz clic en **Explorador de archivos**, y luego busca la carpeta **[Repository Root]\Allfiles\Mod11\Labfiles\Resources**.
 4.	Desde el Explorador de Archivos, arrastra **mark-hanson.jpg** a la insignia del altavoz en el navegador.
-5.	5. Verifica que la placa del altavoz se ve similar a la siguiente imagen:
+5.	Verifica que la placa del altavoz se ve similar a la siguiente imagen:
 
     -   Resultado gráfico del paso anterior antes de arrastrar la imagen:
-![alt text](./Images/Fig-5-SpBatchDespues "The speaker badge for Mark Hanson")
+![alt text](./Images/Fig-4-SpBatchAntes.jpg "The speaker badge for Mark Hanson")
 
     -   Resultado gráfico del paso anterior despùes de arrastrar la imagen:
-![alt text](./Images/Fig-5-SpBatchDespues "The speaker badge for Mark Hanson")
+![alt text](./Images/Fig-5-SpBatchDespues.jpg "The speaker badge for Mark Hanson")
 
 6.	Cerrar el navegador.
 7.  Cierre todas las ventanas abiertas.
