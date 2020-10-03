@@ -4,7 +4,7 @@
 2. **Fecha:** Jueves 1 de octubre de 2020.
 3. **Resumen del Ejercicio:**
     * En este laboratorio haremos dos ejericios;
-        * En el primer ejericio hacemos uso de técnicas para hacer una presentación amigable al usario. A la hora de imprimir por ejemplo se eliminan encabezado, pie de página entre otras cosas que no son necesarias y hacen la impresión más amigable.
+        * En el primero añadimos un código JavaScript a la página web **Live** para recibir preguntas de un web socket y para mostrarlas..
         * En el segundo ejericicio usamos técnicas para mostrar solo la información que para el usuario es relevante por ejemplo en el factor de forma reducido (envolvente) y que al mostrar la barra de navegación el enlace **Registrarse** no aparezca en el encabezado de la página web. Además hacemos que la aplicación se adapte a las pantallas de los dispositivos.
 
     
@@ -38,7 +38,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 7.	Si aparece el cuadro de diálogo **Error de página web**, haga clic en **No**.
 8.	Verifica que la página **En vivo** se vea como la siguiente imagen:
 
-![alt text](./Imágenes/20480B_13_Live.png "La página en vivo")
+![alt text](./Imágenes/Fig-1-Live.jpg "La página en vivo")
 
 9.	Cerrar el navegador y volver a **ContosoConf - Microsoft Visual Studio**.
 10.	En **Solution Explorer**, expandir el proyecto **ContosoConf**, y luego hacer doble clic en **live.htm**.
@@ -133,6 +133,9 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 - **¡Este es un mensaje inapropiado!**
 - **¿Cuánto de CSS3 puedo usar ahora mismo?**
 5.	Cerrar el navegador.
+
+    - El resultado de la tarea anterior se muestra visualmente en la gráfica siguiente:
+    ![alt text](./Images/Fig-2-LiveResp.png "The Live page")
 
 >**Resultados:** Después de completar este ejercicio, habrás añadido un código JavaScript a la página web **Live** para recibir preguntas de un web socket y para mostrarlas.
 
