@@ -57,19 +57,35 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
    ```bash
         npm install --save-dev babel-cli babel-preset-es2015
    ```
+    - Representación gráfica del ejercicio anterior. Instalación del **babel-preset** antes de ejecutar la el **npm run build**:
+
+![alt text](./Images/Fig-1-BabelPreset.jpg "Instalando babel-preset")
+
+
 7.  Inserte el siguiente código en **package.json**:
    ```json
         "scripts": {
             "build": "babel --presets es2015 src -d dist"
         },
-   ```
+  ```
+
+
 >**Nota**: Este código te permite ejecutar **npm ejecutar build** sin referencia a **node_modules babel**. 
 
 8.  En la línea de comandos, ejecute el comando:
 ```bash
         npm run build
 ```
->**Nota**: La aplicación crea la carpeta **dist** y el archivo **nuevo índice** de acuerdo con las normas de ECMAScript 2015.
+    - Representación gráfica del ejercicio anterior. Ejecución del comando **npm run build** para la creación del **dist build**:
+
+![alt text](./Images/Fig-2-NPM-run.jpg "Instalando babel-preset")
+
+
+    - Representación gráfica de la carpeta **dist build** creada:
+
+![alt text](./Images/Fig-3-BuildFolder.jpg "Instalando babel-preset")
+
+>**Nota**: La aplicación crea la carpeta **dist** y el archivo **new index** de acuerdo con las normas de ECMAScript 2015.
 
 ## Demostración: Usando Webpack y Babel para construir una aplicación JavaScript
 

@@ -30,7 +30,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
 ## Ejercicio 1: Mejorar la capacidad de respuesta usando un web worker
 
-### Tarea 1: Revisar la página de la insignia de orador
+### Tarea 1: Revisar la página de la identificación de conferencista
 
 1.	Abrir **Microsoft Visual Studio 2019**.
 2.	En Microsoft Visual Studio, en el menú **Archivo**, apunta a **Abrir**, y luego haz clic en **Proyecto/Solución**.
@@ -74,7 +74,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 		};
     ```
 
-### Tarea 2: Convertir la imagen de la insignia de honor a escala de grises
+### Tarea 2: Convertir la imagen de la identificación de conferencista a escala de grises
 
 1.	En **Solution Explorer**, en la carpeta **scripts**, haga doble clic en **speakerBadgePage.js**.
 2.	En **speakerBadgePage.js**, encuentra el siguiente comentario:
