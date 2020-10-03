@@ -3,9 +3,10 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** Jueves 1 de octubre de 2020.
 3. **Resumen del Ejercicio:**
-    * En este laboratorio haremos dos ejericios;
+    * En este laboratorio haremos tres ejericios;
         * En el primero añadimos un código JavaScript a la página web **Live** para recibir preguntas de un web socket y para mostrarlas..
-        * En el segundo ejericicio usamos técnicas para mostrar solo la información que para el usuario es relevante por ejemplo en el factor de forma reducido (envolvente) y que al mostrar la barra de navegación el enlace **Registrarse** no aparezca en el encabezado de la página web. Además hacemos que la aplicación se adapte a las pantallas de los dispositivos.
+        * En el segundo ejercicio se modifica la página **Live**, para permitir a los usuarios hacer preguntas enviando mensajes al servidor mediante el socket web.
+        * En el último ejercicio, agregamos una función a la página **Live** que permite a los usuarios informar preguntas inapropiadas y hace que la aplicación las elimine..
 
     
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna presentada.
@@ -13,7 +14,10 @@
 Fecha de entrega: Jueves 1 de octubre de 2020.
 
 >**Objetivos**: 
-* En este laboratorio tenemos como objetivo usar técnicas y herramientas que hacen la impresión al usuario más amigable. Queremos hacer la aplicación amigable para el usuario y para que cuando usa diferente dispositivos con diferentes tamaño de la pantalla del disposito solo se muestre las información relevante. También es aprender como hacer posible que la aplicación se adapte a la pantalla del móvil del usuario.
+*   En este laboratorio haremos tres ejericios;
+        * Usar código JavaScript a la página web **Live** para recibir preguntas de un web socket y para mostrarlas.
+        * En el segundo ejercicio se prentened modificar la página **Live**, para comprender como podemos que los usuarios puedan hacer preguntas enviando mensajes al servidor mediante el socket web.
+        * En el último ejercicio, aprendemos como agregar una función a la página **Live** que permite a los usuarios informar preguntas inapropiadas y hace que la aplicación las elimine.
 
 # Laboratorio: Realizar la comunicación en tiempo real mediante el uso de enchufes de la web
 
@@ -135,7 +139,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 5.	Cerrar el navegador.
 
     - El resultado de la tarea anterior se muestra visualmente en la gráfica siguiente:
-    ![alt text](./Images/Fig-2-LiveResp.png "The Live page")
+    ![alt text](./Images/Fig-2-LiveResp.jpg "The Live page")
 
 >**Resultados:** Después de completar este ejercicio, habrás añadido un código JavaScript a la página web **Live** para recibir preguntas de un web socket y para mostrarlas.
 
@@ -206,7 +210,7 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 9.	Cierre el navegador.
 
     - El resultado de la tarea anterior se muestra visualmente en la gráfica siguiente:
-    ![alt text](./Images/Fig-3-LiveResp.png "The Live page")
+    ![alt text](./Images/Fig-3-LiveResp.jpg "The Live page")
 
 >**Resultados:** Después de completar este ejercicio, habrás modificado la página de preguntas **En vivo** para permitir a los usuarios hacer preguntas enviando mensajes al servidor mediante el socket web.
 
@@ -305,9 +309,24 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 #### Tarea 4: Probar la aplicación
 
 1.	En el Explorador de soluciones, haga doble clic en **live.htm**.
-2.	2. En el menú **Debug**, haga clic en **Start Without Debugging**.
-3.	3. En el navegador, después de que se cargue la página, espere cinco segundos.
-4.	Junto a **Cuáles son algunos buenos recursos para empezar con 
+2.	En el menú **Debug**, haga clic en **Start Without Debugging**.
+3.	En el navegador, después de que se cargue la página, espere cinco segundos.
+4.	Junto a **Cuáles son algunos buenos recursos para empezar con HTML5**?, hacer clic en **Report**.
+5.  Espere por unos segundos.
+6.  Verifique que la pregunta **¿Cuáles son algunos buenos recursos para comenzar con HTML5?** se haya eliminado de la página.
+7. Cierre el navegador.
+
+    - El resultado de la tarea anterior antes de hacer clic en "Report" se muestra visualmente en la gráfica siguiente:
+
+    ![alt text](./Images/Fig-4-LiveReportAntes.jpg "The Live page")
+
+    - El resultado de la tarea anterior después de hacer clic en "Report" se muestra visualmente en la gráfica siguiente:
+
+    ![alt text](./Images/Fig-5-LiveReportDespues.jpg "The Live page")
+
+
+
+>**Resultados:** Después de completar este ejercicio, habrá agregado una función a la página ** En vivo ** que permite a los usuarios informar preguntas inapropiadas y hace que la aplicación las elimine.
 
 
 
