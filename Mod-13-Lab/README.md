@@ -205,6 +205,9 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 8.	Verifique que la lista de preguntas incluye **Esto es una prueba.**
 9.	Cierre el navegador.
 
+    - El resultado de la tarea anterior se muestra visualmente en la gráfica siguiente:
+    ![alt text](./Images/Fig-3-LiveResp.png "The Live page")
+
 >**Resultados:** Después de completar este ejercicio, habrás modificado la página de preguntas **En vivo** para permitir a los usuarios hacer preguntas enviando mensajes al servidor mediante el socket web.
 
 ## Ejercicio 3: Manejando diferentes tipos de mensajes de Web Socket.
