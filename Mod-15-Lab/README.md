@@ -9,6 +9,8 @@
 4. **Dificultad o problemas presentados y como se resolvieron:** Al subir al github los archivo uno de los archivos creado por el bundle en el último ejercicio no se puede subir ya que el nombre creado por el cache es muy largo. A continuación se muestra el problema presentado:
 
 
+![alt text](./Images/Fig-5-NombreLargo.jpg "Error por nombre largo")
+
 Lo que he hecho es cambiar el nombre a "sha-512" aunque por ser cache creo que no tiene mucho problema a ejecutar la aplicación.
 
 **Fecha de entrega:** Lunes 5 de octubre de 2020
