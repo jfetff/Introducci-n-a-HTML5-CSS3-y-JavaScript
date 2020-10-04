@@ -8,9 +8,6 @@
 </head>
 <body>
     <h2 style='text-align:center;'>Ejercicio No 74</h2><br />
-
-
-
     <table style="width:80%;margin-left:auto;margin-right:auto;">
         <tr>
             <td>
@@ -32,10 +29,10 @@
                         B. &lt;input id="txtValue" type="text" required="xxx"/&gt;<br />
                     </li>
                     <li>
-                        C. &lt;input id="txtValue" type="text" pattern-"[A-Za-z] {3} "/&gt;<br />
+                        C. &lt;input id="txtValue" type="text" pattern="[A-Za-z]{3}"/&gt;<br />
                     </li>
                     <li>
-                        D. &lt;input id="txtValuen type="code" pattern"="country"/&gt;
+                        D. &lt;input id="txtValue" type="code" pattern"="country"/&gt;
                     </li>
                 </ul>
 
@@ -82,12 +79,20 @@
                 <h3 style="color:red">Respuesta:</h3>
                 Por lo anterior mencionado la respuesta C.
                 <br /><br />
+                <form action="#">
+
+                    Country code:
+                    <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"/>
+                    <input type="submit">
+                </form>
                 <h3 style="color:red">Fuentes:</h3>
                 Las mismas citadas por el ejercicio.
             </td>
         </tr>
     </table>
+<script>
 
+</script>
 </body>
 
 </html>
