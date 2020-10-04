@@ -112,6 +112,10 @@ Asegúrate de que has clonado el directorio 20480C de GitHub. Contiene los segme
    ```bash
         npm install @babel/core babel-loader @babel/preset-env webpack webpack-cli --save-dev
    ```
+Fig-4-BabelWebPack
+
+Fig-5-BabelPollyFill
+
 3.  Para instalar **babel-polyfill**, **babel-plugin-transform-async-functions**, **isomorphic-fetch**, ejecute el siguiente comando en la línea de comandos:
    ```bash
         npm install babel-polyfill babel-plugin-transform-async-functions isomorphic-fetch --save
