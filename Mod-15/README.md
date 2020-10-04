@@ -10,6 +10,7 @@
 
 ![alt text](./Images/Fig-8-NombreLargo.jpg "Instalando babel-preset")
 
+Lo que he hecho es cambiar el nombre a "sha-512" aunque por ser cache creo que no tiene mucho problema a ejecutar la aplicación.
 
 **Fecha de entrega:** Lunes 5 de octubre de 2020
 

@@ -164,5 +164,5 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 5.	Cerrar el navegador.
 6.  Cierre todas las ventanas abiertas.
 
->**Resultados**: Al completar este ejercicio, has usado objetos para refactorizar el código JavaScript para que la página **Calendario** sea más mantenible.
-Después de completar este ejercicio, habrá refactorizado el código JavaScript para que la página **Calendario** sea más mantenible usando objetos.
+>**Resultados**: Al completar este ejercicio, has usado objetos para refactorizar el código JavaScript para que la página **schedule** sea más mantenible.
+Después de completar este ejercicio, habrá refactorizado el código JavaScript para que la página **schedule** sea más mantenible usando objetos.
