@@ -1,4 +1,7 @@
-﻿async function request(obj, successHandler, errorHandler) {
+﻿require('babel-polyfill');
+require('isomorphic-fetch');
+
+async function request(obj, successHandler, errorHandler) {
     const options = {
         method: obj.method || 'GET'
     }

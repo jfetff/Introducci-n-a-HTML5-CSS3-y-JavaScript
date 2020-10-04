@@ -112,14 +112,22 @@ Asegúrate de que has clonado el directorio 20480C de GitHub. Contiene los segme
    ```bash
         npm install @babel/core babel-loader @babel/preset-env webpack webpack-cli --save-dev
    ```
-Fig-4-BabelWebPack
 
-Fig-5-BabelPollyFill
+    - Representación gráfica del ejercicio anterior. Ejecución e instalación de paquetes**@babel/core** y otros:
+
+![alt text](./Images/Fig-4-BabelWebPack.jpg "Instalando el paquetes para el build Babel PollyFill y otros")
+
 
 3.  Para instalar **babel-polyfill**, **babel-plugin-transform-async-functions**, **isomorphic-fetch**, ejecute el siguiente comando en la línea de comandos:
    ```bash
         npm install babel-polyfill babel-plugin-transform-async-functions isomorphic-fetch --save
    ```
+
+    - Representación gráfica del ejercicio anterior. Ejecución e instalación de paquetes**babel-polyfill** y otros:
+
+![alt text](./Images/Fig-5-BabelPollyFill.jpg "Instalando el paquetes para el build Babel PollyFill y otros")
+
+
 4.  En el tutorial de construcción - Microsoft Visual Studio, en el menú **Proyecto**, haga clic en **Agregar nuevo elemento**.
 5.  En el cuadro de diálogo **Add New Item - build-tutorial**, haz clic en **JavaScript File**.
 6.  En el cuadro **Nombre**, escriba **webpack.config.js**.
@@ -175,6 +183,11 @@ Fig-5-BabelPollyFill
    ```bash
         npm run webpack
    ```
+    - Representación gráfica del ejercicio anterior. Ejecución y resultado del comando **npm run webpack**:
+
+![alt text](./Images/Fig-6-WebpackRun.jpg "Ejecutanod el comando npm run webpack")
+
+
 2.  Abrir **index.html** y reemplazar el valor del script **src** del archivo bundle.
    ```html
         <script src="build/app.bundle.js"></script>
@@ -182,6 +195,13 @@ Fig-5-BabelPollyFill
 3.  Ejecute la aplicación.
 4.  Abra el Microsoft Internet Explorer 11 y vaya a **http://localhost:51341/index.html**.
 5.  Compruebe si la página web funciona en Internet Explorer 11 como lo hace en Microsoft Edge.
+
+    - Representación gráfica del ejercicio anterior. Creación de bundle de javascript, así como la comparación en de la visualización entre navegadores:
+
+![alt text](./Images/Fig-7-appBundle.jpg "Creando el bundle de javascript y visualización entre navegadores")
+
+
+
 6.  En el menú de depuración, haz clic en **Detener depuración**.
 7.  Cierra todas las ventanas abiertas.
 
