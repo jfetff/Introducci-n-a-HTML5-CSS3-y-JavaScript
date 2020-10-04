@@ -3,24 +3,20 @@
 1. **Nombres y apellidos:** José René Fuentes
 2. **Fecha:** 30 de Septiembre 2020.
 3. **Resumen del Ejercicio:**
-    * En este laboratorio hace uso Chrome DevTools que son un conjunto de herramientas de creación web y depuración integrado en Google Chrome. Usamos DevTools para iterar y depurar tu sitio, y para crear un perfil de él. 
-    Algunos de los paneles que contiene son:
-    * Device Mode - para desarrollar experiencias web con una completa capacidad de respuestas y que prioricen los dispositivos móviles. Emula sensores: ubicación geográfica y acelerómetro.
-    * Elements - el panel de Elements se usa para iterar la distribución y el diseño de tu sitio mediante la libre manipulación de DOM y CSS. Además; Inspecciona y modifica ligeramente tus páginas, Edita estilos y Edita el DOM.
-    * Console - para registrar información de diagnóstico durante el desarrollo o úsalo como un shell para interactuar con el código JavaScript en la página. Entro lo cual; Interactúa desde la línea de comandos.
-    * Sources - Panel Sources Depura tu código JavaScript con puntos de interrupción en el panel Sources o conecta los archivos locales mediante espacios de trabajo para usar el editor en tiempo real de DevTools. Además; Depura con puntos de interrupción, Depura código ofuscado, Configura la persistencia con los espacios de trabajo de DevTools.
-    * Network - el panel Network para obtener información sobre recursos solicitados y descargados, y optimizar el rendimiento de carga de tu página. Como por ejemplo; Conceptos básicos del panel Network, Comprensión de Resource Timing, Limitación de la red.
-    * Timeline - el panel Timeline para mejorar el rendimiento del tiempo de ejecución de la página mediante la grabación y la exploración de los diferentes eventos que ocurren durante el ciclo de vida de un sitio. Además nos ayuda con; Cómo ver el rendimiento, Analizar el rendimiento del tiempo de ejecución,
-    Diagnosticar diseños sincrónicos forzados.
-    * Profiles - el panel Profiles si necesitas más información que la que proporciona el panel Timeline; por ejemplo, para rastrear pérdidas de memoria, también así se usa como; Generador de perfiles de CPU en JavaScript, Generador de perfiles de montón.
-    * Application - el panel Resources para inspeccionar todos los recursos que se cargan; entre otros, bases de datos IndexedDB o Web SQL, almacenamiento local y de sesión, cookies, caché de la app, imágenes, fuentes y hojas de estilos, además de Administrar datos.
+    * En este laboratorio hay tres ejecicios:
+        - En el primer ejercicio hacemos uso de técnicas para poder implementar la funcionalidad que permite al usuario arrastrar y soltar una imagen desde el Explorador de Archivos a la página web.
+        - En el segundo ejercicio añadimos un reproductor de vídeo a la página de inicio.
+        - En el último ejercicio hacmos uso de elementos para crear una página que implemente la **Localización** del usuario de tal manera que en la página se pueda mostrar la distancia entre el usuario y el lugar de la conferencia.
     
-4. **Dificultad o problemas presentados y como se resolvieron:** La experiencia nueva de usar F12 es la única dificultad. Hay caracteristicas que no son las mismas en diferentes navegadores. En mi caso yo uso Chrome por eso enfoco el desarrollo de este laboratorio a Chrome. 
+4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna dificultad. 
 
 Fecha de entrega: Martes 29 de septiembre de 2020
 
 >**Objetivos**: 
-* En este laboratorio hace uso de Chrome DevTools que son un conjunto de herramientas de creación web y depuración integrado en Google Chrome. Usamos DevTools para iterar y depurar tu sitio, y para crear un perfil de él. En el resumen del ejercicio indicamos los diferentes paneles con los cuales nos vamos a familirizar en este laboratorio.
+*   Los objetivos es poder añadir funcionalidades en nuestra aplicación para poder tener efectos como:
+    - Arrastra y pegar fotos en la aplicación.
+    - Añadir videos a la aplicación.
+    - Poder detectar la **localización** del usuario que abre nuestra aplicación y calcule la distancia entre el usuario y la ubicación donde se encuentra alojada la aplicación o una establecida.
 
 Dondequiera que la ruta de un archivo comience con *[Raíz del repositorio]*, reemplácela con la ruta absoluta de la carpeta en la que reside el repositorio 20480. Por ejemplo, si clonaste o extrajiste el repositorio 20480 a to**C:\Users\John Doe\Downloads\20480**, cambiar la ruta de:**[Repository Root]\AllFiles\20480C\Mod01** a**C:\Users\John Doe\Downloads\20480\AllFiles\20480C\Mod01**.
 
