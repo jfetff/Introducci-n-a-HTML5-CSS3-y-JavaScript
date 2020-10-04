@@ -8,7 +8,6 @@
     
 4. **Dificultad o problemas presentados y como se resolvieron:** Al subir al github los archivo uno de los archivos creado por el bundle en el último ejercicio no se puede subir ya que el nombre creado por el cache es muy largo. A continuación se muestra el problema presentado:
 
-![alt text](./Images/Fig-8-NombreLargo.jpg "Instalando babel-preset")
 
 Lo que he hecho es cambiar el nombre a "sha-512" aunque por ser cache creo que no tiene mucho problema a ejecutar la aplicación.
 
@@ -44,9 +43,13 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
    ```bash
         npm install babel-core babel-loader babel-preset-es2015 webpack --save-dev
    ```
-    - Representación gráfica del ejercicio anterior. Instalación del **babel-preset** antes de ejecutar la el **npm run build**:
+- Representación gráfica del ejercicio anterior. Instalación del **babel-preset** antes de ejecutar la el **npm run build**:
 
 ![alt text](./Images/Fig-1-BabelInstall.jpg "Instalando babel-preset")
+
+- Representación gráfica del ejercicio anterior. Una vez que del **Webpack** ya se ha instalado, captura de pantalla:
+
+![alt text](./Images/Fig-2-BabelInstallHecho.jpg "Instalando babel-preset")
 
 
 10. En ContosoConf - Microsoft Visual Studio, en el menú **Proyecto**, haga clic con el botón derecho **Agregar nuevo elemento**.
@@ -116,6 +119,12 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
    ```bash
         npm run webpack
    ```
+
+    - Representación gráfica del ejercicio anterior. Ejecución del comando **npm run webpack** 
+
+![alt text](./Images/Fig-3-WebpackRun.jpg "Instalando Webpack")
+
+
 2.  Para cada archivo html, reemplace todos los **script src** para cargar los nuevos archivos de la carpeta **dist**. Por ejemplo:
    ```html
         <script src="/dist/video.bundle.js" type="module"></script>
@@ -124,34 +133,9 @@ Asegúrate de que has clonado el directorio 20480C de GitHub (**https://github.c
 
 >**Resultados**: Después de completar este ejercicio, tendrá un nuevo archivo **bundle.js** que es compatible con ECMAScript 5 para navegadores más antiguos.
 
+    - Representación gráfica del ejercicio anterior. Ejecución de la aplicación en IE navegador antiguo** 
 
-
-
-
-
-
-
-
-
-
-![alt text](./Images/Fig-7-appBundle.jpg "Creando el bundle de javascript y visualización entre navegadores")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![alt text](./Images/Fig-4-IEStars.jpg "Instalando Webpack")
 
 
 
