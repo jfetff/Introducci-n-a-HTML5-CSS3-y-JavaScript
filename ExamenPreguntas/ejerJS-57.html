@@ -98,21 +98,75 @@
                 El segundo código que se pide es lo contrario a lo anterior. Es decir si el array existe
                 se tienen que obtener los valores de este, concatenarlos en una cadena para después
                 pintarlos en el div por medio de la cadena final concatenada. Por eso la solución es el bloque de código 2.
-                Hay solo tres posibles soluciones los bloques 2, 4 y 5. El 5to no puede ser ya que une una cadena de texto donde no
-                se obtiene los valores del array. El 4to tampoco ya que el bucle for iterara con una variable i. Además 
+                Hay solo tres posibles soluciones los bloques 2, 4 y 5. El 5to tal y como se muestra aquí abajo se verifica
+                vemos que si se obtiene la respuesta que se desea. El 4to tampoco ya que el bucle for iterara con una variable i. Además 
                 que no cierra un parentesis o sea daría error en el código.
-                La única solución es el 2do bloque de código.
+                La solución es el 2do bloque de código, así como el bloque 5to.
 
                 <br /><br />
                 <h3 style="color:red">Respuesta:</h3>
-                Para el primer bloque de código de los escogido es el 1ro.
-                Para el segundo bloque de código de los escogido es el 2do.
+                Recreamos el código para ambas posibles opciones así:<br><br>
+                Primera opción usando:<br>
+                <ul style="list-style: none;">
+                    <li>Para el primer bloque de código de los escogido es el 1ro.:<p style="color:red;">if(!arr[ctry]){</p></li>
+                    <li>Para el segundo bloque de código de los escogido es el 2do.:<br>
+                        <p style="color: red;">for(var i in arr)</p>
+                        <p style="margin-left: 40px;color: red;">if(arr[i]) txt += i + " ";</p>
+                        Para comprobar esta opción has clic en el botón "submit1"
+                    </li>
+                </ul>
+                <br><br>
+                Segunda opción usando:<br>
+                <ul style="list-style: none;">
+                    <li>Para el primer bloque de código de los escogido es el 1ro.:<p style="color:red;">if(!arr[ctry]){</p></li>
+                    <li>Para el segundo bloque de código de los escogido es el 2do.:<br>
+                        <p style="color:red;">for(var i in arr)</p>
+                        <p style="margin-left: 40px;color:red;">txt += i + " ";</p>
+                        Para comprobar esta opción has clic en el botón "submit2"
+                    </li>
+                </ul>
+                
+                <br /><br />
+                <input id="Country" type="text" />
+                <input type="button" value="submit1" onclick="validate1()" />
+                <input type="button" value="submit2" onclick="validate2()" />
+                <div id="valid"></div>
                 <br /><br />
                 <h3 style="color:red">Fuentes:</h3>
                 Las mismas dadas en la respuesta del ejercicio.
             </td>
         </tr>
     </table>
+    <script>
+        function validate1(){
+            var arr = new Array();
+            arr["USA"] = true;
+            arr["CA"] = true;
+            arr["UK"] = true;
+            var ctry = document.getElementById("Country").value;
+            if(!arr[ctry]){
+                var txt = "Country is not valid!!. ";
+                txt += "Valid values are ";
+                for(var i in arr)
+                    if(arr[i]) txt += i + " ";
+                document.getElementById("valid").innerText = txt;
+            }
+        }
+        function validate2(){
+            var arr = new Array();
+            arr["USA"] = true;
+            arr["CA"] = true;
+            arr["UK"] = true;
+            var ctry = document.getElementById("Country").value;
+            if(!arr[ctry]){
+                var txt = "Country is not valid!!. ";
+                txt += "Valid values are ";
+                for(var i in arr)
+                    txt += i + " ";
+                document.getElementById("valid").innerText = txt;
+            }
+        }
+    </script>
 </body>
 
 </html>
