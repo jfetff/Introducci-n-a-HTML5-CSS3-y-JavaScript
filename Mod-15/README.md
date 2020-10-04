@@ -1,17 +1,20 @@
 # Modulo 15: JavaScript de empaquetado para el despliegue de la producción
 
 1. **Nombres y apellidos:** José René Fuentes
-2. **Fecha:** Jueves 1 de octubre de 2020.
+2. **Fecha:** Lunes 5 de octubre de 2020.
 3. **Resumen del Ejercicio:**
-    * En este laboratorio haremos tres lecciones que nos ayudan a entender como podemos transformar, rotar, trasladar, modificar y animar objetos en páginas web html.
+    * En este laboratorio haremos uso de diferentes librerias para construir o empaquetar un proyecto ya creado con javascript. Entre las librerías que usamos están; babel, webpack, su dependencian y otras.
 
     
-4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna presentada.
+4. **Dificultad o problemas presentados y como se resolvieron:** Al subir al github los archivo uno de los archivos creado por el bundle en el último ejercicio no se puede subir ya que el nombre creado por el cache es muy largo. A continuación se muestra el problema presentado:
 
-Fecha de entrega: Jueves 1 de octubre de 2020.
+![alt text](./Images/Fig-8-NombreLargo.jpg "Instalando babel-preset")
+
+
+**Fecha de entrega:** Lunes 5 de octubre de 2020
 
 >**Objetivos**: 
-* En este laboratorio tenemos como objetivo usar técnicas y herramientas que nos ayuden a rotar, transformar, trasladar, animar, escalar y más gráficos creado por nosotros en una aplicación web.
+* En este laboratorio tenemos como objetivo usar librerías como; babel, webpack, su dependencian y otras para poder empaquetar un proyecto de javascript.
 
 # Lección 2: Creación de paquetes separados para el soporte de los navegadores cruzados
 
