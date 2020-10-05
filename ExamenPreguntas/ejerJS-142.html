@@ -12,14 +12,14 @@
             -ms-grid-rows: 1fr 1fr 1fr;
         }
         .blueBox{
-            -ms-grid-row: 2; 
-            -ms-grid-column: 2;
+            -ms-grid-rows: 2; 
+            -ms-grid-columns: 2;
             -ms-wrap-flow: auto;
             background-color: blue;
         }
         .text{
-            -ms-grid-row: 1; 
-            -ms-grid-column: 1;
+            -ms-grid-rows: 1; 
+            -ms-grid-columns: 1;
             -ms-grid-column-span: 3;  
             -ms-grid-row-span: 3;   
         }
@@ -52,17 +52,24 @@
                 <br /><br />
                 <hr>
                 <h2 style="color:red">Explicación</h2>
-                En este ejercicio hay una contradicción de lo que es una table y un div. 
-                Aunque la descripción se ofrece para una tabla lo descrito es un div.
-                Las respuestas presentadas se basan en un div.
+                En este ejercicio varios div anidados los cuales se modifican por medio de hojas de estilo
+                y se convierten en un grid. Aquí las hojas de estilos definen el ejercicio para ejecutarse en 
+                el explorador de windows por lo definido en las hojas de estilos. 
+                Puede que hAunque la descripción se ofrece para una tabla lo descrito es un div.
+                Algunas definiciones de estilos estan erradas ya que no aparecec las "s" al final de row y column.
                 <br /><br />
                 <h3 style="color:red">Respuesta:</h3>
-                Las respuestas dado los tres div serán "NO" por lo expuesto graficamente a continuación.
+                La respuesta 1 dado que es un grdi será "NO" por lo expuesto graficamente a continuación. Sin embargo, 
+                esta respuesta es válida siempre y cuando el contenido de texto no exagerado de lo contrario este se solapa con las filas y columnas.
+                La respuesta de la 2 y 3 es si y abajo con el código representado se ve visualmente. El contenido del div con el fondo
+                azul siempre se mantiene en la segunda fila y segunda columna o sea en el centro.
+                El contenido del div content si que llena todas las filas y columna, prueba de ello es el borde creado para ver lo que 
+                abarca este div. Como se ve el borde negro se distribuye por todas las celdas del gril.
                 <br /><br />
                 <div class="body" style="background-color: lightgray;"> clase body
                     <div class="container" name="container" style="background-color: lightpink;">  
                         <div name="blueBox" class="blueBox">Clase y nombre Caja Azul clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, </div>
-                        <div name="content" class="text" style="border-style: solid;"> clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  Nombre content y clase Textoclase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, </div>
+                        <div name="content" class="text" style="border-style: solid;"> clase content esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  clase content esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, clase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu,  Nombre content y clase Textoclase container esto es un contenido mayor para ve si machaca la zona azu, <br>es un contenido mayor para ve si machaca la zona azu, </div>
                     </div>
                 </div>
                 <br /><br />
