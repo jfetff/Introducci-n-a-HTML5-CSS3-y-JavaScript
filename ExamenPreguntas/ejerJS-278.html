@@ -1,10 +1,10 @@
-<!DOCTYPE html><br />
-<html lang="en"><br />
+<!DOCTYPE html>
+<html lang="en">
 
 <head><br />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=100, initial-scale=1.0"><br />
-    <title>Javascript Ejercicio - 278</title><br />
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 278</title>
 </head>
 
 <body>
@@ -65,16 +65,28 @@
                             Target 4: Siengo la lógica anterior Target 4: || ya que el if condicional contiene dos segmentos de verficicación.
                         </li>
                         <li>
-                            Target 5: Como no puede estar vacío el fname, Target 5: x != ""
+                            Target 5: Como no puede estar vacío el fname, Target 5: x == ""
                         </li>
                     </ul>
-        
+                    <form name="myForm" action="#" onsubmit="validateForm()">
+                        First Name: <input type="text" name="fname" />
+                        <input type="submit" value="Submit" />
+                    </form>
 
                 </td>
             </tr>
         </table>
 
-
+        <script>
+            function validateForm(){
+                var x = document.forms["myForm"]["fname"].value; 
+                if(x ==  null || x == "")
+                    alert("El nombre no es válido!!\n El order a rellenar es: 1-  myForm 2-  fname 3-  == 4-  ||  5-  == ");
+                else
+                    alert("Usted a escrito un nombre correcto gracias!!\n El order a rellenar es:  1-  myForm 2-  fname 3-  == 4-  ||  5-  == ");
+            }
+        </script>
+<br /><br /><br />
 </body>
 
 </html>
