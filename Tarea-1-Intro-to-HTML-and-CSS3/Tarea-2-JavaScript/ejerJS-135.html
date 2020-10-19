@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 135</title>
+</head>
+
+<body>
+    <h2>Escriba un código JavaScript para dividir un arreglo dado de enteros positivos en dos partes. El primer elemento
+        va a la primera parte, el segundo elemento va a la segunda parte, y el tercer elemento va a la primera parte y
+        así sucesivamente. Ahora calcule la suma de dos partes y almacénela en una matriz de tamaño dos. R:85
+    </h2>
+
+    <div style="text-align: center;">
+        <p>Haz click en el botón para dividir la matriz</p><br><br>
+    </div>
+
+    <div style="text-align: center;">
+        <label for="arr">Escriba un arreglo:</label>
+        <input type="text" id="arr"><br><br>
+        <button onclick="alternate_Sums()">Dividir arreglo</button>
+    </div>
+
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer135.jpg" alt="Descripción del ejer135">
+    </div>
+
+    <script>
+        function alternate_Sums() {
+            var arr = document.getElementById("arr").value;
+            var inverso = [];
+            arr = arr.replace(/\s+/g,'');
+            var ar1 = arr.split(',');
+            var result = [0, 0];
+            for (var i = 0; i < ar1.length; i++)
+            {
+                if (i % 2) result[1] += parseInt(ar1[i]);
+                else
+                result[0] += parseInt(ar1[i]);
+            }
+            document.getElementById("resp").innerHTML = "El arreglo con la suma de las partes es: [" + result + "]";
+        }
+    </script>
+</body>
+
+</html>

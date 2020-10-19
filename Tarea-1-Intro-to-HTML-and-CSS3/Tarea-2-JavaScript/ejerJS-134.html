@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 134</title>
+</head>
+
+<body>
+    <h2>Escriba un JavaScript para reemplazar cada carácter de una cadena dada por el siguiente en el alfabeto inglés.
+        Nota: 'a' será reemplazada por 'b' o 'z' será reemplazada por 'a'. R:84
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <p>Haz click en el botón para reemplazar cada carácter de una cadena dada por el siguiente en el alfabeto inglés. </p><br><br>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="max">Escriba un arreglo de cadenas separados por coma:</label>
+        <input type="text" id="arr"><br><br>
+        <button type="button" onclick="cambiarLetra();">Encontrar la cadena</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer134.jpg" alt="Descripción del ejer134">
+    </div>
+
+    <script>
+        function cambiarLetra() {
+            var alfabeto = "abcdefghijklmnopqrstuvwxyz";
+            var ar = document.getElementById("arr").value;
+            ar = ar.trim();
+            var res = "";
+            for(var i = 0; i < ar.length; i++){
+                var tmp = ar[i];
+                for(var j = 0; j < alfabeto.length; j++){
+                    var t = alfabeto[j];
+                    if(t === tmp)
+                        if(t === "z")
+                            res = res + "a";
+                        else
+                            res = res + alfabeto[j + 1];
+                }
+            }
+            document.getElementById("resp").innerHTML = "El nuevo arreglo obtenido es: [" + res + "]";
+        }
+    </script>
+</body>
+
+</html>

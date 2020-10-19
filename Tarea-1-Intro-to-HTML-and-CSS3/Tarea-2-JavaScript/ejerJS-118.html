@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 118</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Escriba un programa JavaScript para encontrar que 1 de enero sería domingo entre 2014 y 2050. R:7
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Haz clic para encontrar las fechas</label>
+        <button type="button" onclick="verFechas();">Ver Fechas</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <script>
+        function verFechas(){
+            var fechas = "";
+            for (var a = 2014; a <= 2050; a++)
+            {
+                var d = new Date(a, 0, 1);
+                if ( d.getDay() === 0 )
+                {
+                    fechas = fechas + "En el año " + a + " el 1o de Enero ha sido Domingo.<br>"
+                }
+            }
+            document.getElementById("resp").innerHTML = fechas;
+        }
+    </script>
+</body>
+
+</html>

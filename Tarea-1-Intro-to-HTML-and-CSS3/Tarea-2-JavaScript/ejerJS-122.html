@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 122</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para invertir los elementos de un arreglo dado de enteros de longitud 3. R:73
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="cad1">Escriba un arreglo de números separados por una coma (3 números mínimos):</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="verArreglo()">Verificar arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer122.jpg" alt="Descripción del ejer122">
+    </div>
+
+
+    <script>
+        function verArreglo() {
+            const array1 = [];
+            var arr1 = document.getElementById("nums").value; // obtengo el arreglo pero en formato cadena, luego hay que pasarlo a enteros
+            arr1 = arr1.replace(/\s+/g, ''); // quito todos los espacios en blanco que hay dentro de la cadena
+            var nums = arr1.split(','); // creo un arreglo con cada elemento como cadena, separandolos por la coma que ha escrito el usuario
+            var inverso = [];
+            if(nums.length >= 3){
+                for (var i = nums.length - 1; i > -1 ; i--) {
+                    var intActual = parseInt(nums[i]);
+                    inverso.push(intActual);
+                }
+                document.getElementById("resp").innerHTML = "El arreglo invertido es: [" + inverso + "]";
+            }else{
+                document.getElementById("resp").innerHTML = "El arreglo escrito no tiene el mínimo de tres elementos, pruebe otra vez";
+            }
+        }
+    </script>
+</body>
+</html>

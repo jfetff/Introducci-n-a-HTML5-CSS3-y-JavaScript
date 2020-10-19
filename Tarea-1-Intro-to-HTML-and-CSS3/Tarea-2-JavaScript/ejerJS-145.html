@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 145</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para encontrar el número que aparece más en un arreglo dado de números enteros.
+        R:94
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números (+ ó -) separados por una coma (3 números al menos):</label>
+        <input type="text" id="str1"><br><br>
+        <button type="button" onclick="hallarNum();">Encuentra número</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <h3>Nota. Si en el arreglo hay dos números con igual número máximo de ocurrencias, el número con menor index será el escogido.</h3>
+        <br><br>
+    </div>
+
+    <br><br><br><br>
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer145.jpg" alt="Descripción del ejer145">
+    </div>
+
+
+    <script>
+        function hallarNum() 
+        {
+            var str1 = document.getElementById("str1").value;
+            var primeraCad = str1.split(',');
+            var mayor = 1, actual = 0, res = str1[0];
+            for (var i = 0; i < str1.length; i++) {
+                var conteo = 1;
+                for (var j = i + 1; j < str1.length; j++) {
+                    if(parseInt(str1[j]) === parseInt(str1[i])){
+                        conteo++;
+                    }
+                }
+                actual = conteo;
+                if(actual > mayor){
+                    mayor = actual;
+                    res = str1[i];
+                }
+            }
+            if(mayor === 1){
+                alert("No hay números repetidos, todos son distintos!!!");
+            }
+            else{
+                alert("El número más frecuente es: " + res + ", aparece " + mayor + " veces.");
+            }            
+        }
+    </script>
+</body>
+
+</html>

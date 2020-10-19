@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 117</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para calcular la suma de tres elementos de un arreglo dado de enteros de longitud
+        3. R:69
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números separados por una coma (3 números):</label>
+        <input type="text" id="arr"><br><br>
+        <button type="button" onclick="calcSuma();">Calcular Suma</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer117.jpg" alt="Descripción del ejer117">
+    </div>
+
+    <script>
+        function calcSuma(){
+            var arr1 = document.getElementById("arr").value;
+            var suma = 0;
+            arr1 = arr1.replace(/\s+/g,'');
+            var ar1 = arr1.split(',');
+            for (var i = 0; i < ar1.length; i++) {
+                var intActual = parseInt(ar1[i]);
+                suma = suma + intActual;
+            }
+            document.getElementById("resp").innerHTML = "La Suma de los elementos del arreglo es: " + suma;
+        }
+    </script>
+</body>
+
+</html>

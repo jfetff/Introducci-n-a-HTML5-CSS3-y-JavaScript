@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 127</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para probar si una matriz de enteros de longitud 2 no contiene 1 o 3. R:78
+    </h2>
+
+    <div style="text-align: center;">
+        <p>Escribe un arreglo y haz click en el botón para probar si una matriz de enteros de longitud 2 no contiene 1 o 3. </p><br><br>
+    </div>
+
+    <div style="text-align: center;">
+        <label for="nums">Escriba un arreglo:</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="not13()">Haz click</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer127.jpg" alt="Descripción del ejer127">
+    </div>
+
+    <script>
+        function not13(){
+            var nums = document.getElementById("nums").value;
+            if (nums.indexOf(1) == -1 && nums.indexOf(3) == -1) {
+                document.getElementById("resp").innerHTML = "El arreglo no contiene el número 1 o 3:"; //esto para la solucion
+            } else {
+                document.getElementById("resp").innerHTML = "El arreglo contiene el número 1 o 3:"; //esto para la solucion
+            }
+        }
+    </script>
+</body>
+
+</html>

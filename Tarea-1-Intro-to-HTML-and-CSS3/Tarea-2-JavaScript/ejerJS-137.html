@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 137</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para comprobar si dos arreglos de números enteros de la misma longitud son
+        similares o no. Las arreglos serán similares si un arreglo se puede obtener de otro arreglo intercambiando como
+        máximo un par de elementos. R:87
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números (+ ó -) separados por una coma:</label>
+        <input type="text" id="str1"><br><br>
+        <label for="cad2">Escriba un 2do arreglo de números (+ ó -) separados por una coma:</label>
+        <input type="text" id="str2"><br><br>
+        <button type="button" onclick="verificarArreglos();">Verifica tus arreglos</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer137.jpg" alt="Descripción del ejer137">
+    </div>
+
+    <script>
+        function verificarArreglos() 
+        {
+            var arr1 = document.getElementById("str1").value;
+            var arr2 = document.getElementById("str2").value;
+            arr1 = arr1.replace(/\s+/g,'');
+            arr2 = arr2.replace(/\s+/g,'');
+            ar1 = arr1.split(',');
+            ar2 = arr2.split(',');
+            conteo = 0;
+            if(arr1.length === arr2.length){
+                for (var i = 0; i < arr1.length; i++) {
+                    if(ar1[i] !== ar2[i]){
+                        conteo++;
+                    }
+                }
+                if(conteo > 2){
+                    document.getElementById("resp").innerHTML = "Los arreglos no se pueden intercambiar";
+                }
+                else{
+                    document.getElementById("resp").innerHTML = "El arreglo ordenado sería: [" + ar1 + "]";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

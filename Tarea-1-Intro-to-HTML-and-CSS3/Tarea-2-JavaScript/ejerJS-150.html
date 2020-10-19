@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 150</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para comprobar si es posible reorganizar los caracteres de una cadena dada de tal
+        manera que se vuelva igual a otra cadena dada. R:99</h2>
+
+
+    <h4>Esta son las dos cadenas en cuestión:</h4>
+
+    <label for="cad1">Primera Cadena:</label>
+    <input type="text" id="str1"><br><br>
+    <label for="cad2">Segunda Cadena:</label>
+    <input type="text" id="str2"><br><br>
+    <button type="button" onclick="reorganizar_cadena();">Comparar Cadenas</button>
+
+
+    <script>
+        function reorganizar_cadena() 
+        {
+            var str1 = document.getElementById("str1").value;
+            var str2 = document.getElementById("str2").value;
+
+            var primeraCad = str1.split(''), segundaCad = str2.split(''), result = true;
+            primeraCad.sort();
+            segundaCad.sort();
+
+            for (var i = 0; i < Math.max(primeraCad.length, segundaCad.length); i++) {
+                if (primeraCad[i] !== segundaCad[i]) {
+                    result = false;
+                }
+            }
+            if(result){
+                alert("Las cadenas de pueden reorganizar y son las mismas!!!");
+            }
+            else{
+                alert("Las cadenas NO SE PUEDEN reorganizar, son DIFERENTES");
+            }
+        } 
+    </script>
+</body>
+
+</html>

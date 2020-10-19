@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 128</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para probar si un arreglo dado de enteros contiene 30 y 40 dos veces. La longitud
+        de la matriz debe ser 0, 1 o 2. R:79
+    </h2>
+
+    <div style="text-align: center;">
+        <p>Haz click en el botón para probar si un arreglo dado de enteros contiene 30 y 40 dos veces.</p><br><br>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="cad">Escriba un arreglo:</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="buscar3040()">Probar arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer128.jpg" alt="Descripción del ejer128">
+    </div>
+
+    <script>
+        function buscar3040() {
+            var ar1 = document.getElementById("nums").value;
+            var arra1 = ar1.replace(/\s+/g,'');
+            arra1 = arra1.split(',');
+            let a = parseInt(arra1[0]),
+                b = parseInt(arra1[1]);
+            if((a === 30 && b === 30) || (a === 40 & b === 40)){
+                document.getElementById("resp").innerHTML = "El arreglo [" + arra1 + "] si contiene dos veces 30 o 40"; //esto para la solucion
+            }else{
+                document.getElementById("resp").innerHTML = "El arreglo no contiene el número 30 o 40 dos veces."; //esto para la solucion
+            }
+        }
+    </script>
+</body>
+</html>

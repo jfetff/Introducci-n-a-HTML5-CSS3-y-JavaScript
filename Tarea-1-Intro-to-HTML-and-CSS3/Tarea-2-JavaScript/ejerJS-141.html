@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 141</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para encontrar el k-ésimo elemento más grande de un arreglo dado de números
+        enteros R:90
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números positivos separados por una coma (3 números al menos):</label>
+        <input type="text" id="arr"><br><br>
+        <label for="cad2">Escoja un número K para la agrupación de los números:</label>
+        <input type="text" id="numK" size="1"><br><br>
+        <label for="cad3">K- tiene que ser múltiplo de la longitud del arreglo:</label><br><br>
+        <button type="button" onclick="hallarElemK();">Hallar el K-ésimo elemento más grande</button>
+    </div>
+
+    <br><br><br><br>
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer141.jpg" alt="Descripción del ejer141">
+    </div>
+
+    <script>
+        function hallarElemK() 
+        {
+            var arr1 = document.getElementById("arr").value;
+            var nK = document.getElementById("numK").value;
+            arr1 = arr1.replace(/\s+/g, '');
+            var valorK = parseInt(nK.replace(/\s+/g, ''));
+            var res = 0, sumaParcial = 0, index = 0;
+            arr1 = arr1.split(',');
+
+            for (let i = 0; i < valorK; i++) {
+                let max_index = i;
+                const tmp = arr1[i];
+                for (let j = i + 1; j < arr1.length; j++) {
+                    if (arr1[j] > arr1[max_index]) {
+                        max_index = j;
+                    }
+                }
+                arr1[i] = arr1[max_index];
+                arr1[max_index] = tmp;
+            }
+            res =  arr1[valorK - 1];
+            alert("La Suma máxima de K elementos consecutivos del arreglo anterior es: " + res);
+        }
+    </script>
+</body>
+
+</html>

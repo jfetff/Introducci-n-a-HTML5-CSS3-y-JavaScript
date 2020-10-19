@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 116</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para crear una nueva cadena usando los primeros y últimos n caracteres de una
+        cadena dada. La longitud de la cadena debe ser mayor o igual a n. R:68
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba aquí si cadena:</label>
+        <input type="text" id="arr"><br><br>
+        <label for="cad2">Escoja un número N para recortar ese número de carácteres antes y al final:</label>
+        <input type="text" id="numK" size="1"><br><br>
+        <button type="button" onclick="verificarCadena();">Verifica tu cadena</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer116.jpg" alt="Descripción del ejer116">
+    </div>
+
+    <script>
+            function verificarCadena(){
+            var arr1 = document.getElementById("arr").value;
+            var nK = document.getElementById("numK").value;
+            var n = parseInt(nK);
+            arr1 = arr1.trim();
+            var c1 = arr1.substring(0, n);
+            var c2 = arr1.substring(arr1.length - n, arr1.length);
+            var res = c1 + c2;
+            document.getElementById("resp").innerHTML = "La cadena final es " + res;
+        }
+    </script>
+</body>
+
+</html>

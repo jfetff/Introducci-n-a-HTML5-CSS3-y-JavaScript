@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 124</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para crear un nuevo arreglo tomando los elementos del medio de dos arreglos
+        de enteros dados y cada uno con longitud 3. R:75
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="cad1">Escriba un arreglo de números separados por una coma (solo 3 números):</label>
+        <input type="text" id="nums1"><br><br>
+        <label for="cad2">Escriba un 2do arreglo de números separados por una coma (solo 3 números):</label>
+        <input type="text" id="nums2"><br><br>
+        <button onclick="creaArreglo()">Crea nuevo arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer124.jpg" alt="Descripción del ejer124">
+    </div>
+
+    <script>
+        function creaArreglo() {
+            var arr1 = document.getElementById("nums1").value; // obtengo el arreglo pero en formato cadena, luego hay que pasarlo a enteros
+            var arr2 = document.getElementById("nums2").value; // obtengo el arreglo pero en formato cadena, luego hay que pasarlo a enteros
+            arr1 = arr1.replace(/\s+/g, ''); // quito todos los espacios en blanco que hay dentro de la cadena
+            arr2 = arr2.replace(/\s+/g, ''); // quito todos los espacios en blanco que hay dentro de la cadena
+            var n1 = arr1.split(','); // creo un arreglo con cada elemento como cadena, separandolos por la coma que ha escrito el usuario
+            var n2 = arr2.split(','); // creo un arreglo con cada elemento como cadena, separandolos por la coma que ha escrito el usuario
+            var newArr = [];
+            newArr.push(parseInt(n1[1]));
+            newArr.push(parseInt(n2[1]));
+            document.getElementById("resp").innerHTML = "El nuevo arreglo es: [" + newArr + "]";
+        }
+    </script>
+
+</body>
+</html>

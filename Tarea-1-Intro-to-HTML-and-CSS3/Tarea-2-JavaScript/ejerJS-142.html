@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 142</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para encontrar la máxima suma posible de algunos de sus k números consecutivos
+        (números que se suceden en orden) de un arreglo dado de enteros positivos. R:91
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números positivos separados por una coma (3 números al menos):</label>
+        <input type="text" id="arr"><br><br>
+        <label for="cad2">Escoja un número K para la agrupación de los números:</label>
+        <input type="text" id="numK" size="1"><br><br>
+        <label for="cad3">K- tiene que ser múltiplo de la longitud del arreglo:</label><br><br>
+        <button type="button" onclick="hallarMayorSuma();">Hallar la mayor Suma de K elementos</button>
+    </div>
+
+    <br><br><br><br>
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer142.jpg" alt="Descripción del ejer142">
+    </div>
+
+    <script>
+        function hallarMayorSuma() 
+        {
+            var arr1 = document.getElementById("arr").value;
+            var nK = document.getElementById("numK").value;
+            arr1 = arr1.replace(/\s+/g, '');
+            var valorK = parseInt(nK.replace(/\s+/g, ''));
+            var res = 0, sumaParcial = 0, index = 0;
+            arr1 = arr1.split(',');
+            for(var j = 0; j < arr1.length - (valorK - 1); j++){
+                for (var i = 0; i < valorK; i++) {
+                    sumaParcial = sumaParcial + parseInt(arr1[index], 10);
+                    index++;
+                }
+                index = j + 1;
+                if(sumaParcial > res){
+                        res = sumaParcial;
+                }
+                sumaParcial = 0;
+            }
+            alert("La Suma máxima de K elementos consecutivos del arreglo anterior es: " + res);
+        }
+    </script>
+</body>
+
+</html>

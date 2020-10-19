@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 126</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para probar si un arreglo de enteros de longitud 2 contiene 1 o 3. R:77
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <p>Escribe un arreglo y haz click en el botón para probar si el arreglo de enteros de longitud 2 contiene 1 o 3. </p><br><br>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="array1">Escriba un arreglo:</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="contain13()">Ver si contiene</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer126.jpg" alt="Descripción del ejer126">
+    </div>
+
+    <script>
+        function contain13() {
+            var nums = document.getElementById("nums").value;
+            if (nums.indexOf(1) != -1 || nums.indexOf(3) != -1) {
+                document.getElementById("resp").innerHTML = "El arreglo contiene el número 1 o 3:"; //esto para la solucion
+            }
+            else 
+            {
+                document.getElementById("resp").innerHTML = "El arreglo no contiene el número 1 o 3:"; //esto para la solucion
+            }
+
+        }
+        //console.log(contain13([1, 5]));
+        //console.log(contain13([2, 3]))
+    </script>
+</body>
+
+</html>

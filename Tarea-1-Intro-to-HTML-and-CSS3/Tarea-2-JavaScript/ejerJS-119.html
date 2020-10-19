@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 119</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para rotar los elementos a la izquierda de un arreglo dado de enteros de longitud
+        3. R:70
+    </h2>
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números separados por una coma (3 números):</label>
+        <input type="text" id="arr"><br><br>
+        <button type="button" onclick="rotarArrglo();">Invertir Arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer119.jpg" alt="Descripción del ejer119">
+    </div>
+
+    <script>
+        function rotarArrglo(){
+            var arr1 = document.getElementById("arr").value;
+            var inverso = [];
+            arr1 = arr1.replace(/\s+/g,'');
+            var ar1 = arr1.split(',');
+            for (var i = ar1.length - 1; i > -1 ; i--) {
+                var intActual = parseInt(ar1[i]);
+                inverso.push(intActual);
+            }
+            document.getElementById("resp").innerHTML = "El arreglo invertido es: [" + inverso + "]";
+        }
+    </script>
+</body>
+
+</html>

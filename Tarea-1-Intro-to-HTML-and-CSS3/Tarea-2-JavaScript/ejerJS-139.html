@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 139</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para verificar si es posible reemplazar $ en una expresión dada x $ y = z con uno
+        de los cuatro signos +, -, * o / para obtener una expresión correcta. Por ejemplo, x = 10, y = 30 yz = 300,
+        podemos reemplazar $ con un operador múltiple (*) para obtener x * y = z R:89
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un operador aritmetico (+, -, *, ó /) para realizar la operación siguiente:</label>
+        <input type="text" id="op"  size="1"><br><br>
+        <label for="cad2">Escoja un número de su agrado:</label>
+        <input type="text" id="num1" size="1"><br><br>
+        <label for="cad3">Escoja otro número de su agrado:</label>
+        <input type="text" id="num2" size="1"><br><br>
+        <button type="button" onclick="calcular();">Realizar Operación</button>
+    </div>
+
+    <script>
+        function calcular() 
+        {
+            var str1 = document.getElementById("op").value;
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var tipoOper = str1.replace(/\s+/g, '');
+            var res = 0;
+            var operacion =  n1 + " " + str1 + " " + n2;
+            switch(tipoOper) {
+                case "+":
+                    res = n1 + n2;
+                    break;
+                case "-":
+                    res = n1 - n2;
+                    break;
+                case "*":
+                    res = n1 * n2;
+                    break;
+                case "/":
+                    res = n1/n2;
+                    break;
+                default:
+                    alert("El operador no es válido, por favor trate de nuevo!!!");
+            }
+            alert("El resultado de la operación " + operacion + " es: " + res);
+        }
+    </script>
+</body>
+
+</html>

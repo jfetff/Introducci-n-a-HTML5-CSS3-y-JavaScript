@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 140</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para calcular los días que quedan hasta la próxima Navidad. R:9
+    </h2>
+    <script>
+        hoy = new Date(); // fecha actual
+        navidadProxima = new Date(2020, 11, 24); // creando una fecha para el 24 de diciembre del 2020
+        var restoMeses = (navidadProxima.getMonth() - 1) - hoy.getMonth();
+         // numero de días del mes actual
+        var diasRestoMes = 31 - hoy.getDate(); // total de dias restantes del mes actual
+        var diasRestantes = restoMeses*30 + 24 + diasRestoMes; // 24 - dias de diciembre para navidad
+        alert("Los días restantes para Navidad son: " + diasRestantes);
+    </script>
+</body>
+
+</html>

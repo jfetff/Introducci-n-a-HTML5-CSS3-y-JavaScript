@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 132</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Escriba un JavaScript para sumar dos enteros positivos sin acarreo. R:82
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <p>Haz click en el botón para sumar los dos números</p><br><br>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="cad1">Escriba un número:</label>
+        <input type="text" id="num1" size="1"><br><br>
+        <label for="cad2">Escriba otro número:</label>
+        <input type="text" id="num2" size="1"><br><br>
+        <button onclick="suma_dos_nums()">Sumar números</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer132.jpg" alt="Descripción del ejer132">
+    </div>
+
+    <script>
+        function suma_dos_nums() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            n1 = n1.trim();
+            n2 = n2.trim();
+            let suma = "";
+            for(var i = n1.length - 1; i > -1 ; i--){
+                var parcial = parseInt(n1[i]) + parseInt(n2[i]);
+                if(parcial > 9){
+                    suma = "1" + suma;
+                }
+                else{
+                    suma = parcial.toString() + suma;
+                }
+            }
+            document.getElementById("resp").innerHTML = "La suma sin acarreo obtenida es: " + suma;
+        }
+    </script>
+</body>
+
+</html>

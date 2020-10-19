@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 114</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para mostrar el nombre de la ciudad si la cadena comienza con "Los" o "Nuevo"; de
+        lo contrario, vuelva en blanco. R:66
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba el nombre de una ciudad:</label>
+        <input type="text" id="arr"><br><br>
+        <button type="button" onclick="verificarCiudad();">Verifica tu ciudad</button>
+    </div>
+
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+
+    <br><br><br><br>
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer114.jpg" alt="Descripción del ejer114">
+    </div>
+
+    <script>
+        function verificarCiudad(){
+            var arr1 = document.getElementById("arr").value;
+            arr1 = arr1.trim();
+            var cad = arr1.substring(0,3);
+            cad1 = cad.toUpperCase();
+            if((cad1 === "LOS") || (cad1 === "NEW")){
+                document.getElementById("resp").innerHTML = "La ciudad contiene el nombre de " + cad;
+            }
+            else{
+                document.getElementById("resp").innerHTML = "Este es un parráfo en blanco";
+            }
+        }
+    </script>
+</body>
+
+</html>

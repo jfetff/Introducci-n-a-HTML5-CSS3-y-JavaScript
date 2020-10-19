@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 148</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para encontrar la cadena más corta posible que pueda crear una cadena para
+        convertirla en un palíndromo añadiendo caracteres al final. R:97
+    </h2>
+    <br><br>
+    <div style="text-align: center;">
+        <label for="cad1">Escriba una cadena para crear el Palíndrome más corto (mínimo 3 carácteres):</label>
+        <input type="text" id="str1"><br><br>
+        <button type="button" onclick="crea_palindrome();">Crear Palíndrome</button>
+    </div>
+
+    <script>
+        function crea_palindrome() 
+        {
+            var str1 = document.getElementById("str1").value;
+            var palindrome = "";
+            var longitud = str1.length;
+            var pivot = Math.ceil(longitud/2);
+            palindrome = str1.substring(0, pivot + 1);
+            if (str1[i] === str1[i - 1]) {
+                palindrome = str1.substring(0, pivot + 2);
+                for (var i = str1.length - (pivot + 1); i > -1; i--) {
+                    palindrome = palindrome + str1[i];
+                }
+            }
+            else{
+                palindrome = str1.substring(0, pivot + 1);
+                for (var i = str1.length - (pivot + 1); i > -1; i--) {
+                    palindrome = palindrome + str1[i];
+                }
+            }
+            alert("El Palíndrome creado es: " + palindrome);
+        }        
+    </script>
+</body>
+
+</html>

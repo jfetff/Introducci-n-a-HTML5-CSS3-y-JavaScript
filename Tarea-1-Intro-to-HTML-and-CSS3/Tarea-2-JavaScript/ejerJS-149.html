@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 149</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para cambiar entre mayúsculas y minúsculas el número mínimo posible de letras
+        para hacer que una cadena determinada se escriba en mayúsculas o minúsculas. Ejemplo de Fox "Write" será write y
+        "PHp" será "PHP" R:98
+    </h2>
+
+    <h4>Escriba las dos cadenas en cuestión:</h4>
+
+    <label for="cad1">Primera Cadena:</label>
+    <input type="text" id="str1"><br><br>
+    <button type="button" onclick="ver_cadenas();">Convertir Cadena</button>
+
+
+    <script>
+        function ver_cadenas() 
+        {
+            var str1 = document.getElementById("str1").value;
+
+            var primeraCad = str1.split(''), result = true;
+            primeraCad.sort();
+            var letra1 = '';
+            var mayus = 0, minus = 0;
+            for (var i = 0; i < primeraCad.length; i++) {
+                letra1 = primeraCad[i];
+                if (primeraCad[i] === letra1.toString().toUpperCase()) {
+                    mayus += 1;
+                }
+                else{
+                    minus += 1;
+                }
+            }
+            if(mayus > minus){
+                primeraCad = str1.toUpperCase();
+                alert("Las mayúsculas dominan, el resultado es: " + primeraCad);
+            }
+            else if(mayus < minus){
+                primeraCad = str1.toLowerCase();
+                alert("Las minúsculas dominan, el resultado es: " + primeraCad);
+            }
+            else {
+                primeraCad = str1.toLowerCase();
+                alert("Igual número de minúsculas y mayúscula, el resultado es: " + primeraCad);
+            }
+        } 
+    </script>
+</body>
+
+</html>

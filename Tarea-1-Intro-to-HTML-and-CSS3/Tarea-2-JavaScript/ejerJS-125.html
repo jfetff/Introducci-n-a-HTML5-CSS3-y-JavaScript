@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 125</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para crear un nuevo arreglo (array) tomando el primer y último elemento de una matriz
+        dada de números enteros y la longitud debe ser mayor o igual a 1. R:76
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <p>Haz click en el botón para crear un nuevo arreglo usando el primer y último elemento de una matriz
+            dada de números enteros y la longitud debe ser mayor o igual a 1</p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="array1">Escriba un arreglo:</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="started()">Crear arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <script>
+        function started() {
+            const array1 = [];
+            var arr1 = document.getElementById("nums").value; // obtengo el arreglo pero en formato cadena, luego hay que pasarlo a enteros
+            arr1 = arr1.replace(/\s+/g, ''); // quito todos los espacios en blanco que hay dentro de la cadena
+            var nums = arr1.split(','); // creo un arreglo con cada elemento como cadena, separandolos por la coma que ha escrito el usuario
+            array1.push(parseInt(nums[0])); // 1º convierto a numero la cadena y luego lo pongo en el nuevo array
+            array1.push(parseInt(nums[nums.length - 1])); // 1º convierto a numero la cadena y luego lo pongo en el nuevo array
+            document.getElementById("resp").innerHTML = "El nuevo arreglo obtenido es: [" + array1 + "]";
+        }
+
+        //console.log(started([20, 20, 30]));
+        //console.log(started([5, 2, 7, 8]));
+        //console.log(started([17, 12, 34, 78]));
+        //console.log(started([50, 15, 25, 40, 60]));
+    </script>
+</body>
+
+</html>

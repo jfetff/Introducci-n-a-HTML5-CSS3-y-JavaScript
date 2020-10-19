@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 131</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para sumar dos dígitos de un entero positivo dado de longitud dos. R:81
+    </h2>
+
+    <div style="text-align: center;">
+        <p>Haz click en el botón para sumar los dos dígitos del número escrito.</p><br><br>
+    </div>
+
+    <div style="text-align: center;">
+        <label for="cad">Escriba un número de dos dígitos:</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="suma()">Crear arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer131.jpg" alt="Descripción del ejer131">
+    </div>
+
+    <script>
+        function suma() {
+            var arr = document.getElementById("nums").value;
+            var num1 = parseInt(arr[0]);
+            var num2 = parseInt(arr[1]);
+            var suma = num1 + num2;
+            document.getElementById("resp").innerHTML = "La suma obtenida es: " + suma;
+        }
+    </script>
+</body>
+
+</html>

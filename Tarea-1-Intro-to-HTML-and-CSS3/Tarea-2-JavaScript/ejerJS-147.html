@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 147</title>
+</head>
+
+<body>
+    <br><br>
+    <h2>Escriba un programa de JavaScript para calcular la suma de diferencias absolutas de números consecutivos de un
+        arreglo dado de enteros. R:96
+    </h2>
+    <br><br>
+    <div style="text-align: center;width: 80%;">
+        <label for="cad1">Escriba un arreglo de números (+ ó -) separados por una coma:</label>
+        <input type="text" id="str1"><br><br>
+        <button type="button" onclick="calc_suma();">Calcular Suma</button>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer147.jpg" alt="Descripción del ejer147">
+    </div>
+
+
+    <script>
+        function calc_suma() 
+        {
+            var str1 = document.getElementById("str1").value;
+            var suma = 0;
+            var primeraCad = str1.split(',');
+            for (var i = 0; i < primeraCad.length - 1; i++) {
+                var sumaParcial = parseInt(primeraCad[i]) + parseInt(primeraCad[i + 1]);
+                suma = suma + sumaParcial;
+            }
+            alert("Las suma de las diferencias absolutas consecutivas es: " + suma);
+        }
+    </script>
+</body>
+
+</html>

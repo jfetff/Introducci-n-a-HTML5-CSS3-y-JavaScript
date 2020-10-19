@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 138</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para verificar si dos números enteros dados son similares o no, si un divisor
+        dado divide ambos enteros y tampoco divide. R:88
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad2">Escoja un número de su agrado:</label>
+        <input type="text" id="num1" size="1"><br><br>
+        <label for="cad3">Escoja otro número de su agrado:</label>
+        <input type="text" id="num2" size="1"><br><br>
+        <button type="button" onclick="calcular();">Realizar Operación</button>
+    </div>
+
+    <div>
+        <p id="resp">
+
+        </p>
+    </div>
+
+
+    <script>
+        function calcular() 
+        {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var tipoOper = str1.replace(/\s+/g, '');
+            var res = 0;
+            var x = 5;
+            var y = 2;
+            var z = x % y;
+            
+            var operacion =  n1 + " " + str1 + " " + n2;
+            if((n1 % n2) != 0) {
+                document.getElementById("resp").innerHTML = "La división entre " + n1 + " y " + n2 + " no es exacta!! ";
+                    alert("El operador no es válido, por favor trate de nuevo!!!");
+            }else if((n1 % n2) === 0) {
+                document.getElementById("resp").innerHTML = "La división entre " + n1 + " y " + n2 + " es exacta!! ";
+                    alert("El operador no es válido, por favor trate de nuevo!!!");
+            }else if(n1 === n2) {
+                document.getElementById("resp").innerHTML = "Los números " + n1 + " y " + n2 + " son iguales!! ";
+                    alert("El operador no es válido, por favor trate de nuevo!!!");
+            }
+        }
+    </script>
+</body>
+
+</html>

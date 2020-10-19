@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 120</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para verificar si el número 1 aparece en la primera o última posición de un arreglo dado de
+        enteros. La longitud de la matriz debe ser mayor o igual a 1. R:71
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="array1">Escriba un arreglo de números (mínimos dos) separados por una coma::</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="verArray()">Comprobar arreglo</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer120.jpg" alt="Descripción del ejer120">
+    </div>
+
+    <script>
+        function verArray() {
+            const array1 = [];
+            var arr1 = document.getElementById("nums").value; // obtengo el arreglo pero en formato cadena, luego hay que pasarlo a enteros
+            arr1 = arr1.replace(/\s+/g, ''); // quito todos los espacios en blanco que hay dentro de la cadena
+            var nums = arr1.split(','); // creo un arreglo con cada elemento como cadena, separandolos por la coma que ha escrito el usuario
+            array1.push(parseInt(nums[0])); // 1º convierto a numero la cadena y luego lo pongo en el nuevo array
+            array1.push(parseInt(nums[nums.length - 1])); // 1º convierto a numero la cadena y luego lo pongo en el nuevo array
+
+            if(array1[0] === 1 || array1[1] === 1){
+                document.getElementById("resp").innerHTML = "El arreglo [" + arr1 + "] tiene el '1' al inicio ó final";
+            }
+            else{
+                document.getElementById("resp").innerHTML = "El arreglo no contiene el '1' ni al inicio y ni al final";
+            }
+  
+        }
+    </script>
+
+</body>
+</html>

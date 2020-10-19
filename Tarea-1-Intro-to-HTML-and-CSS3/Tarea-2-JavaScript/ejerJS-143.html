@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 143</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para encontrar la diferencia máxima entre dos elementos adyacentes de un arreglo dado
+        de números enteros. R:92
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números (+ ó -) separados por una coma (3 números al menos):</label>
+        <input type="text" id="arr"><br><br>
+        <button type="button" onclick="hallarMayorDiferencia();">Hallar la mayor diferencia</button>
+    </div>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <h3>Nota. La resta se realiza tomando en cuenta el valor absoluto de la resta.</h3>
+        <br><br>
+    </div>
+
+    <br><br><br><br>
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer143.jpg" alt="Descripción del ejer143">
+    </div>
+
+
+    <script>
+        function hallarMayorDiferencia() 
+        {
+            var arr1 = document.getElementById("arr").value;
+            arr1 = arr1.replace(/\s+/g, '');
+            var res = 0, restaParcial = 0;
+            arr1 = arr1.split(',');
+            for (var i = 0; i < arr1.length - 1; i++) {
+                restaParcial = Math.abs(parseInt(arr1[i], 10) - parseInt(arr1[i + 1], 10));
+                if(restaParcial > res){
+                    res = restaParcial;
+                }
+                restaParcial = 0;
+            }
+            alert("La diferencia máxima entre los elementos adyacentes del arreglo anterior es: " + res);
+        }
+    </script>
+</body>
+
+</html>

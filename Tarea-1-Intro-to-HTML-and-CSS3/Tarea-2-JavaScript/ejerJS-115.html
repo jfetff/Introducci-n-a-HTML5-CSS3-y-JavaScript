@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 115</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para crear una nueva cadena a partir de una cadena dada, eliminando el primer y
+        último carácter de la cadena si el primer o último carácter es 'P'. Devuelve la cadena original si no se cumple
+        la condición. R:67
+    </h2>
+
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba una frase:</label>
+        <input type="text" id="arr"><br><br>
+        <button type="button" onclick="verificarCadena();">Verifica tu cadena</button>
+    </div>
+
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer115.jpg" alt="Descripción del ejer115">
+    </div>
+
+    <script>
+        function verificarCadena(){
+            var arr1 = document.getElementById("arr").value;
+            arr1 = arr1.trim();
+            var c1 = arr1.charAt(0);
+            var c2 = arr1.charAt(arr1.length - 1);
+            c1 = c1.toUpperCase();
+            c2 = c2.toUpperCase();
+            if((c1 === 'P') && (c2 === 'P')){
+                var r = arr1.substring(1,arr1.length - 1);
+                document.getElementById("resp").innerHTML = "La cadena final es " + r;
+            }
+            else{
+                document.getElementById("resp").innerHTML = "Su cadena no contiene P al inicio y al final";
+            }
+        }
+    </script>
+</body>
+
+</html>

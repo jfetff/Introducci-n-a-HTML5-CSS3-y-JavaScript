@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 130</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para intercambiar el primer y último elemento de una matriz dada de números
+        enteros. La longitud de la matriz debe ser de al menos 1. R:80
+    </h2>
+
+    
+    <div style="text-align: center;">
+        <p>Haz click en el botón para intercambiar el primer y último número del arreglo escrito.</p><br><br>
+    </div>
+
+    <div style="text-align: center;">
+        <label for="arra">Escriba un arreglo de números enteros separados por una coma:</label>
+        <input type="text" id="nums"><br><br>
+        <button onclick="cambiar()">Intercambiar números</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer130.jpg" alt="Descripción del ejer130">
+    </div>
+
+    <script>
+        function cambiar() {
+            var arra = document.getElementById("nums").value;
+            arra = arra.replace(/\s+/g,'');
+            var arr = arra.split(',');
+            var index = arr.length - 1;
+            var tmp1 = arr[0];
+            var tmp2 = arr[index];
+            arr[0] = tmp2;
+            arr[index] = tmp1;
+            document.getElementById("resp").innerHTML = "El nuevo arreglo obtenido es: [" + arr + "]";
+        }
+    </script>
+</body>
+
+</html>

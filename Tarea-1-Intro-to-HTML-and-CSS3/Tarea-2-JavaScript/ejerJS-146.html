@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 146</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para reemplazar todos los números con un número específico de un arreglo dado de
+        enteros. R:95
+    </h2>
+    <br><br>
+    <div style="text-align: center; width:80%;">
+        <label for="cad1">Escriba un arreglo de números (+ ó -) separados por una coma (3 números al menos):</label>
+        <input type="text" id="str1"><br><br>
+        <label for="cad1">Escoja un número del arreglo anterior:</label>
+        <input type="text" id="num1" size="1"><br><br>
+        <label for="cad1">Escriba un número para reemplazar el número anterior:</label>
+        <input type="text" id="num2" size="1"><br><br>
+        <button type="button" onclick="reemplazar();">Intercambiar números</button>
+    </div>
+
+    <br><br><br><br>
+
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer146.jpg" alt="Descripción del ejer146">
+    </div>
+
+
+    <script>
+        function reemplazar() 
+        {
+            var str1 = document.getElementById("str1").value;
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var primeraCad = str1.split(',');
+            var res = [];
+            for (var i = 0; i < primeraCad.length; i++) {
+                if(primeraCad[i] === n1){
+                    res.push(n2);
+                }
+                else{
+                    res.push(primeraCad[i]);
+                }
+            }
+            alert("El nuevo arreglo creado es: " + res);
+        }
+    </script>
+</body>
+</html>

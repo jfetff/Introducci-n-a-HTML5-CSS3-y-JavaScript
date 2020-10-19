@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 136</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Escriba un programa JavaScript para encontrar los tipos de un ángulo dado.  R:86
+    </h2>
+    <br><br>
+    <h3 style="text-align:center;">Tipos de ángulos:</h3>
+    <div>
+        <table width ="400px" style="margin-left:auto; margin-right:auto;">
+            <tr>
+                <td>
+                    <ul>
+                        <li><strong>Ángulo agudo:</strong> un ángulo entre 0 y 90 grados.</li>
+                        <li><strong>Ángulo recto:</strong> un ángulo de 90 grados.</li>
+                        <li><strong>Ángulo obtuso:</strong> ángulo entre 90 y 180 grados.</li>
+                        <li><strong>Ángulo llano:</strong> un ángulo de 180 grados.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="max">Escriba una cantidad de grados para descubrir el tipo de ángulo:</label>
+        <input type="text" id="arr" size="1"><br><br>
+        <button type="button" onclick="tipoAngulo();">Encontrar la cadena</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"></p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer136.jpg" alt="Descripción del ejer136">
+    </div>
+
+    <script>
+        function tipoAngulo() {
+            var ar = document.getElementById("arr").value;
+            ar = ar.trim();
+            var angulo = parseInt(ar);
+            if (angulo < 90 && angulo > 0) {
+                document.getElementById("resp").innerHTML = "Los " + angulo + " grados escritos corresponden a un ángulo agudo.";
+            }
+            else if (angulo === 90) {
+                document.getElementById("resp").innerHTML = "Los " + angulo + " grados escritos corresponden a un ángulo recto.";
+            }
+            else if (angulo < 180 && angulo > 90) {
+                document.getElementById("resp").innerHTML = "Los " + angulo + " grados escritos corresponden a un ángulo obtuso.";
+            }
+            else if (angulo === 180) {
+                document.getElementById("resp").innerHTML = "Los " + angulo + " grados escritos corresponden a un ángulo llano.";
+            }
+        }
+    </script>
+</body>
+
+</html>

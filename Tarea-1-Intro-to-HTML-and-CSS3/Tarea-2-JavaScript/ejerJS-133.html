@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 133</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Escriba un JavaScript para encontrar la cadena más larga de un arreglo de cadenas dado. R:83
+    </h2>
+
+    <br><br>
+    <div style="text-align: center;">
+        <label for="max">Escriba un arreglo de cadenas separados por coma:</label>
+        <input type="text" id="arra"><br><br>
+        <button type="button" onclick="encuentra_cadena();">Encontrar la cadena</button>
+    </div>
+
+    <br><br>
+    <div style="text-align:center;color:red;font-weight:bold;">
+        <p id="resp"> </p>
+    </div>
+
+    <br><br><br>
+    <div style="text-align: center;">
+        <h3>Descripción gráfica del Ejercicio.</h3>
+        <img src="img/ejer133.jpg" alt="Descripción del ejer133">
+    </div>
+
+    <script>
+        function encuentra_cadena() {
+            var ar = document.getElementById("arra").value;
+            ar = ar.replace(/\s+/g,'');
+            ar = ar.split(',');
+            var arMax = ar[0];
+            for(var i = 1; i < ar.length; i++){
+                var tmp = ar[i];
+                if(tmp.length > arMax.length){
+                    arMax = tmp;
+                }
+            }
+            alert("La cadena más larga es: " + arMax);
+        }
+        //console.log(encuentra_cadena(['a', 'aa', 'aaa', 'aaaaaaaa', 'aaaa']));
+    </script>
+</body>
+
+</html>

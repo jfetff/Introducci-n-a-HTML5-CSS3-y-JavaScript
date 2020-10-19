@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Javascript Ejercicio - 113</title>
+</head>
+
+<body>
+    <h2>Escriba un programa JavaScript para probar si una cadena termina con "Script". La longitud de la cadena debe ser
+        mayor o igual a 6. R:65
+    </h2>
+    <h4>Esta es la cadena en cuestión:</h4>
+
+    <p id="cadInicial">"Esta es la cadena guapísima, de más de 6 caracteres, que termina en Script"</p>
+    <p id="caracteres"></p>
+    <p id="content"></p>
+
+    <script>
+        var cadena = document.getElementById("cadInicial").innerText;
+        var longitud = cadena.length;
+        alert("La cadena es: " + cadena);
+        alert("La Longitud de la cadena es: " + longitud);
+        document.getElementById("caracteres").innerHTML = "Mi cadena tiene " + longitud + " caracteres.";
+
+        if (cadena.endsWith("Script")) {
+            document.getElementById("content").innerHTML = "Mi cadena termina con Script.";
+        } else {
+            document.getElementById("content").innerHTML = "Mi cadena NO termina con Script, so CENTOLLO.";
+        }
+
+    </script>
+</body>
+
+</html>
